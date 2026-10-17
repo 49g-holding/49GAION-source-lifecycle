@@ -4,9 +4,10 @@
 
 Each case has one pass condition, written before use. Once a case has been used it is frozen: a case is struck by adjudication, never renumbered.
 
-- Cases 1 to 16 are the Library's TEST-SOURCE-LIFECYCLE v1, cases 1 to 16 (`49GAION-protocol` `library/cards/README.md`), unchanged. The Library's cases 17 to 26 (TEST-SOURCE-LIFECYCLE v2 and v3) are kept by the cases of this test named in the table **The Library's cases** below.
+- Cases 1 to 16 are the Library's TEST-SOURCE-LIFECYCLE v1, cases 1 to 16 (`49GAION-protocol` `library/cards/README.md`), unchanged. The Library's cases 17 to 29 (TEST-SOURCE-LIFECYCLE v2 to v4) are kept by the cases of this test named in the table **The Library's cases** below.
 - Cases 17 to 72 are the product's own acceptance, one case per requirement of the product's PRD v0.6 (blueprint §0, Product requirements). The PRD's "minimum observable acceptance" governs; the line here only names it.
 - Cases 73 to 91 test this AIOC's form.
+- Cases 92 to 95 test the feeds of the Operations Event Register (blueprint v0.1.3).
 
 A case of this test is never one of the product's three integrated qualification cycles (PRD §10).
 
@@ -130,9 +131,18 @@ Each passes when its target, once set (most are **Open** in the PRD), is met wit
 | 90 | Records of the work, never about a person | An export of records of the work offered with a field that says who did the work is not recorded and nothing of it is kept (`person-level records`); one without its impact assessment and its HF-17 decision is not served; where the projection moves personal data, the decision is `export-share-or-purge-personal-data`, signed at the gateway; an admitted one is served as `export` with its `as_of` date. *(Added 16 October 2026, before any use.)* |
 | 91 | The v0.6 sockets contract | An element row is shown with its proposed priority; `ACCEPT` records it and `correct` records the priority given; the needs answer carries `decision.priority`; an export request for records of the work states `aggregation: by role-type and process`, and one with any other aggregation is returned malformed. *(Added 16 October 2026, before any use.)* |
 
+## F. The feeds of the Operations Event Register
+
+| # | Case | Passes when |
+|---|---|---|
+| 92 | Correspondence, fixed as received | A source of origin kind `correspondence` is filed only by `[ORG]AIOC-OER`, on behalf of the position that asked to keep the entry, with a current contributor agreement; its hash equals the register entry's content hash; it reads back byte-identical, class EVIDENCE; it is never served as the owner's own statement, and carries no statement label of the owner; a filing of `correspondence` by any other part is refused. *(Added 17 October 2026, before any use.)* |
+| 93 | The register's write scope | `[ORG]AIOC-OER` may file only `correspondence` and `export`; its `export` is admitted only as Annex F.3 sets (by role-type and process, after its HF-17 decision), and one with a field that says who did the work is refused and nothing of it is kept; a filing of any other kind by it is refused. *(Added 17 October 2026, before any use.)* |
+| 94 | Gap signals | A gap signal from `[ORG]AIOC-OER` becomes a gap in the gap list, by reference to the register entry, ranked like any other; it is never recorded as a source, and a signal that carries content is refused. *(Added 17 October 2026, before any use.)* |
+| 95 | The register's read and notices | `[ORG]AIOC-OER` reads only references (ID, version, status, held or not held) of the sources its entries cite, under its signed grant; a read of content by it is refused; a notice of supersession, revocation or reclassification reaches it for every version an entry cites, naming the reference and version, never the content. *(Added 17 October 2026, before any use.)* |
+
 ## The Library's cases
 
-Every case of the Library's TEST-SOURCE-LIFECYCLE v3 is kept here; none is weakened (template §9).
+Every case of the Library's TEST-SOURCE-LIFECYCLE v4 is kept here; none is weakened (template §9).
 
 | Library case | Kept by cases of this test |
 |---|---|
@@ -147,18 +157,21 @@ Every case of the Library's TEST-SOURCE-LIFECYCLE v3 is kept here; none is weake
 | 24 (the essentials checklist) | 89 |
 | 25 (records of the work, never about a person) | 90 |
 | 26 (priority on element rows; the aggregation of an export request) | 91 |
+| 27 (correspondence from the Operations Event Register, fixed as received) | 92 |
+| 28 (the register's scope: what it files, its references-only read, its notices) | 93, 95 |
+| 29 (gap signals from the Operations Event Register) | 94 |
 
 ## The parts' tests
 
 | Test | Part | Owner | Cases |
 |---|---|---|---|
 | TEST-SL-SLL v1 | Source Lifecycle Lead | the Cell carrying `[ORG]HOAC-TM` | 8, 13, 14, 23, 25, 37, 78, 81 |
-| TEST-SL-SLCS v1 | Chief of Staff | `[ORG]CELL-SLL` | 3 to 7, 9 to 12, 15, 17, 18, 24, 26, 28 to 36, 38, 40, 44, 53 to 55, 57, 59, 60, 73 to 77, 80 to 83 |
+| TEST-SL-SLCS v1 | Chief of Staff | `[ORG]CELL-SLL` | 3 to 7, 9 to 12, 15, 17, 18, 24, 26, 28 to 36, 38, 40, 44, 53 to 55, 57, 59, 60, 73 to 77, 80 to 83, 92 to 95 |
 | TEST-SL-SLIA v1 | Independent Auditor | `[ORG]CELL-SLL` | 50, 51, 79 |
-| TEST-SL-SLIR v1 | Intake and Recording Pod | `[ORG]CELL-SLL` | 1, 2, 5, 6, 19 to 23, 31, 42, 43, 89, 90 |
+| TEST-SL-SLIR v1 | Intake and Recording Pod | `[ORG]CELL-SLL` | 1, 2, 5, 6, 19 to 23, 31, 42, 43, 89, 90, 94 |
 | TEST-SL-SLCR v1 | Conversation Recorder | `[ORG]CELL-SLL` | 1, 2, 19, 20, 31, 82 |
 | TEST-SL-SLSC v1 | Source Classifier | `[ORG]CELL-SLL` | 22, 23, 42, 43 |
-| TEST-SL-SLGF v1 | Gap Finder | `[ORG]CELL-SLL` | 6, 21, 89 |
+| TEST-SL-SLGF v1 | Gap Finder | `[ORG]CELL-SLL` | 6, 21, 89, 94 |
 | TEST-SL-SLCA v1 | Consistency Auditor | `[ORG]CELL-SLL` | 5, 20, 43 |
 | TEST-SL-SLDP v1 | Document Production Pod | `[ORG]CELL-SLL` | 41, 44, 46, 88 |
 | TEST-SL-SLD v1 | Drafter | `[ORG]CELL-SLL` | 41, 44, 46, 88 |
