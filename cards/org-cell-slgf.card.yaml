@@ -5,11 +5,11 @@ full_name: Source Lifecycle Gap Finder
 parent: '[ORG]POD-SLIR'
 accountable_to: '[ORG]CELL-SLL'
 type: AI Agent
-card_version: v0.1.2
-version: 0.1.2
+card_version: v0.1.3
+version: 0.1.3
 lineage:
   id: '[ORG]CELL-SLGF'
-  version: 0.1.2
+  version: 0.1.3
   relation: original
 lifecycle_state: designed
 fixed_test:
@@ -26,6 +26,7 @@ ports:
   accepted_content:
   - corpus, read only
   - owner profile set
+  - gap signal
   authority_limit: as in its role card (blueprint §4-§5)
   audit_trail: the event record of [ORG]AIOC-SL
   required_tests:

@@ -5,11 +5,11 @@ full_name: Source Lifecycle Chief of Staff
 parent: '[ORG]AIOC-SL'
 accountable_to: '[ORG]CELL-SLL'
 type: AI Chief of Staff
-card_version: v0.1.2
-version: 0.1.2
+card_version: v0.1.3
+version: 0.1.3
 lineage:
   id: '[ORG]CELL-SLCS'
-  version: 0.1.2
+  version: 0.1.3
   relation: original
 lifecycle_state: designed
 fixed_test:
@@ -31,6 +31,7 @@ ports:
   - missing report
   - needs status
   - filing
+  - gap signal
   - draft items
   - classification proposal
   - gap list

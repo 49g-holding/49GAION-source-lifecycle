@@ -7,7 +7,7 @@ blueprint:
   organisation: "<organisation>"          # filled in each organisation's own copy
   type: "foundational"
   org_aion: "[ORG]AION"
-  blueprint_version: "v0.1.2"
+  blueprint_version: "v0.1.3"
   status: "draft"
   template:
     name: "49GAION AIOC Blueprint Template"
@@ -15,7 +15,7 @@ blueprint:
     source: "github.com/49g-holding/49GAION-aioc, template/AIOC-BLUEPRINT-TEMPLATE.md @ e89ed1d"
   mother:
     name: "49GAION Source Lifecycle"
-    version: "part card v3 (DRAFT)"
+    version: "part card v4 (DRAFT)"
     source: "github.com/49g-holding/49GAION-protocol, library/cards/source-lifecycle.part-card.json and the Protocol section Source Lifecycle (§13); Standard §3.1, item 7. This text is its mother blueprint, in its mother repository github.com/49g-holding/49GAION-source-lifecycle (49GAION DR-0024)"
   writing_repository: "<org>aioc-sl"
   code_project: "<org>aioc-sl, on the organisation's code platform"
@@ -25,9 +25,9 @@ blueprint:
     functional: ["Conversation to Record", "Gap Finding", "Classification and Sharing", "Document Production", "Publication and Activation", "Revision and Retirement", "Agent and Knowledge Governance", "Connections and the Output Socket", "Needs Requests", "Trial and Exit"]
 ```
 
-# Blueprint · `[ORG]AIOC-SL` · Source Lifecycle · `v0.1.2`
+# Blueprint · `[ORG]AIOC-SL` · Source Lifecycle · `v0.1.3`
 
-**Draft, 15 October 2026; v0.1.1, 16 October 2026, takes the filings of every design stage (`49GAION/DR-0016` to `DR-0018`): two new origin kinds, `process and position design` and `delivery and implementation`, and a write scope for each stage limited to its own kinds and its design reports, which hold its returns. v0.1.2, 16 October 2026, adds the organisation dictionary, the essentials checklist and the rule for records of the work as it runs, and takes the v0.6 sockets contract (`49GAION/DR-0023`; Annex F).** **This is the mother blueprint** of the Library part 49GAION Source Lifecycle, for any organisation (`49GAION/DR-0024`; `decisions/DR-0001`). It was written from the blueprint of the part's first instance, `v0.1.2`, with every value of that organisation removed; each organisation fills its own copy (§0, §2.1). It sets the product, as its requirements document describes it, into the form of the 49GAION AIOC template: its card, its positions, its Cells and Pods, and each capability in four parts. It adds no product requirement. Every rule rests on a 49GAION text, on the product requirements document, the PRD of the Source Lifecycle product (cited by requirement ID; §0), or is new in this blueprint and marked **New**. Nothing here has run. Every fixed test reads `NOT_RUN`.
+**Draft, 15 October 2026; v0.1.1, 16 October 2026, takes the filings of every design stage (`49GAION/DR-0016` to `DR-0018`): two new origin kinds, `process and position design` and `delivery and implementation`, and a write scope for each stage limited to its own kinds and its design reports, which hold its returns. v0.1.2, 16 October 2026, adds the organisation dictionary, the essentials checklist and the rule for records of the work as it runs, and takes the v0.6 sockets contract (`49GAION/DR-0023`; Annex F). v0.1.3, 17 October 2026, takes the feeds of the Operations Event Register (`49GAION/DR-0027`): the origin kind `correspondence`, fixed as received; the register's write scope; and gap signals.** **This is the mother blueprint** of the Library part 49GAION Source Lifecycle, for any organisation (`49GAION/DR-0024`; `decisions/DR-0001`). It was written from the blueprint of the part's first instance, `v0.1.2`, with every value of that organisation removed; each organisation fills its own copy (§0, §2.1). It sets the product, as its requirements document describes it, into the form of the 49GAION AIOC template: its card, its positions, its Cells and Pods, and each capability in four parts. It adds no product requirement. Every rule rests on a 49GAION text, on the product requirements document, the PRD of the Source Lifecycle product (cited by requirement ID; §0), or is new in this blueprint and marked **New**. Nothing here has run. Every fixed test reads `NOT_RUN`.
 
 > **Source Lifecycle in one page**
 >
@@ -88,13 +88,13 @@ blueprint:
 | Made from | the Library part 49GAION Source Lifecycle, part card `v1` (DRAFT), and Protocol §13 |
 | Template | 49GAION AIOC Blueprint Template `v1.5.0` at `e89ed1d` (with the `v1.6.0` additions: mechanism register and Reserve, checks that are not fixed tests, the added Configuration rows, position codes only) |
 | Mother | 49GAION Source Lifecycle, part card `v1` |
-| Blueprint version and status | `v0.1.2` · draft |
+| Blueprint version and status | `v0.1.3` · draft |
 | Accountable seat (`[ORG]HOAC-ACS`) | the Source Lifecycle Lead, `[ORG]CELL-SLL`, a HOAC position. Who occupies it is top management's own mechanism; this AIOC never sees it (`49GAION/DR-0013`) |
 | Reports to | the Cell carrying `[ORG]HOAC-TM` |
 | Writing repository | `<org>aioc-sl`, private where it holds the organisation's data, plus `-records` for the AIOC's own run records and `-records-restricted` for records that name a person (Naming Standard R9; Protocol §14, item 6). The owner's sources never live in any of these (§7) |
 | Code project | `<org>aioc-sl`, on the organisation's code platform: the product's code and its PRD, the PRD's single home (PRD D-19) |
 | Product requirements | the PRD of the Source Lifecycle product, in the code project. The requirement IDs cited here (FR-n, NFR-n, D-n, journeys) are those of the PRD `v0.6` the first instance was written from; an instance cites its own PRD's version, and maps any ID that differs |
-| Mother | 49GAION Source Lifecycle, part card `v3`. This text is its mother blueprint, held in the part's mother repository `github.com/49g-holding/49GAION-source-lifecycle` and pinned in the Library register (`49GAION/DR-0024`) |
+| Mother | 49GAION Source Lifecycle, part card `v4`. This text is its mother blueprint, held in the part's mother repository `github.com/49g-holding/49GAION-source-lifecycle` and pinned in the Library register (`49GAION/DR-0024`) |
 | Panel | not yet built (§4.4) |
 | Back office | not yet built |
 | Attribution | Powered by 49GAION |
@@ -115,7 +115,7 @@ card:
   inner_units: ["[ORG]CELL-SLL", "[ORG]CELL-SLCS", "[ORG]CELL-SLIA", "[ORG]POD-SLIR", "[ORG]POD-SLDP"]
   type: "foundational"
   org_aion: "[ORG]AION"
-  card_version: "v0.1.2"
+  card_version: "v0.1.3"
   input_door: "Chief of Staff"
   wake: { method: "queue", verified: false }
   receives:
@@ -148,8 +148,12 @@ card:
       acceptance_test: "TEST-SL v1, case 30"
       decision_needed: false
     - kind: "filing"                      # a connected part files a source of a named origin kind
-      format: "source of an origin kind within the filing part's write scope (operating model, process and position design, delivery and implementation, or design report), filed on behalf of a named HOAC position that holds a current contributor agreement"
-      acceptance_test: "TEST-SL v1, cases 36, 87"
+      format: "source of an origin kind within the filing part's write scope (operating model, process and position design, delivery and implementation, or design report; for [ORG]AIOC-OER, correspondence and export), filed on behalf of a named HOAC position that holds a current contributor agreement"
+      acceptance_test: "TEST-SL v1, cases 36, 87, 92, 93, 95"
+      decision_needed: false
+    - kind: "gap signal"                  # from [ORG]AIOC-OER: an act done without a source
+      format: "one signal per act, by reference to the register entry, never content (Protocol §13, item 12)"
+      acceptance_test: "TEST-SL v1, case 94"
       decision_needed: false
   delivers:
     - kind: "source"
@@ -169,7 +173,7 @@ card:
       usual_receivers: ["any connected part"]
     - kind: "filing receipt"
       format: "receipt naming the filed source's ID, version and hash, and its status"
-      usual_receivers: ["[ORG]AIOC-TOM"]
+      usual_receivers: ["[ORG]AIOC-TOM", "[ORG]AIOC-OER"]
     - kind: "gap list"
       format: "what is missing for this kind of owner, ranked by consequence, in plain words"
       usual_receivers: ["the HOAC positions, through the HU output port"]
@@ -179,7 +183,7 @@ card:
   anatomy:
     panel: { health: { tests: true, metrics: ["stuck", "returned", "late", "inputs refused", "previews waiting", "gaps open", "needs open", "needs past deadline", "grants active", "grants expiring", "notices sent", "candidates by stage", "publication verified", "live qualification cycles"] } }
     back_office: { converses_with_humans: true, hosts: ["Chief of Staff", "Office"], protocol_traffic: true }
-    definition: { location: "<org>aioc-sl, blueprint/SL-BLUEPRINT.md", version: "v0.1.2" }
+    definition: { location: "<org>aioc-sl, blueprint/SL-BLUEPRINT.md", version: "v0.1.3" }
     delivery: { rollback: "one-click" }
     connectors:
       - { role: "inbound data sources (document stores, code repositories, wikis)", connector: "data-source connector, one per source type", access_managed_in: "panel" }   # the Panel shows and requests it; the grant is signed at the tool gateway as connect-external-port (Protocol §13, item 5)
@@ -187,10 +191,10 @@ card:
       - { role: "broadcast", connector: "broadcast adapter, one per channel", access_managed_in: "panel" }
     gateway: { metering_id: "<per-AIOC metering id>" }
   full_name: "Source Lifecycle"
-  version: "0.1.2"
-  lineage: { id: "[ORG]AIOC-SL", version: "0.1.2", relation: "original" }
+  version: "0.1.3"
+  lineage: { id: "[ORG]AIOC-SL", version: "0.1.3", relation: "original" }
   lifecycle_state: "designed"
-  blueprint_version: "v0.1.2"
+  blueprint_version: "v0.1.3"
   template_version: "v1.5.0"
   accountable_to: "[ORG]CELL-TMS"         # example code of the Cell carrying [ORG]HOAC-TM (Naming Standard R15); never a Cell inside this AIOC
   top_cell: "[ORG]CELL-SLL"
@@ -204,7 +208,7 @@ card:
     - { id: "sl-document-production", name: "Governed document production, request to archive", tags: ["production"] }
     - { id: "sl-sockets", name: "Connections, output socket and needs requests", tags: ["connection"] }
   ports:
-    - { unit: "[ORG]AIOC-SL", port: "ai-in", direction: "input", type: "AI", identification: "technical-key", accepted_content: ["connection request", "read request", "needs request", "missing report", "needs status", "filing"], authority_limit: "within each connected part's signed grant; nothing outside it is read, accepted or filed", audit_trail: "unit register and the serve log", required_tests: ["TEST-SL v1"], enforcement: "shared-gateway-outside-unit" }
+    - { unit: "[ORG]AIOC-SL", port: "ai-in", direction: "input", type: "AI", identification: "technical-key", accepted_content: ["connection request", "read request", "needs request", "missing report", "needs status", "filing", "gap signal"], authority_limit: "within each connected part's signed grant; nothing outside it is read, accepted or filed", audit_trail: "unit register and the serve log", required_tests: ["TEST-SL v1"], enforcement: "shared-gateway-outside-unit" }
     - { unit: "[ORG]AIOC-SL", port: "ai-out", direction: "output", type: "AI", identification: "technical-key", accepted_content: ["source reference", "needs answer", "needs status", "notice", "filing receipt"], authority_limit: "by reference only, within the grant; never a person's name; never a source's text outside a held, granted read", audit_trail: "serve log and the Work Item record", required_tests: ["TEST-SL v1"], enforcement: "shared-gateway-outside-unit" }
     - { unit: "[ORG]AIOC-SL", port: "hu-in", direction: "input", type: "HU", identification: "live-human-sign-in-at-gateway", accepted_content: ["contributor agreement acceptance", "input from a contributor", "approval, correction or rejection of a preview item", "answer to a row", "sharing setting by an authorised position"], authority_limit: "the contributor's current agreement and the position's authority_scope; a decision row needs a fresh live sign-in", audit_trail: "the event record of each item", required_tests: ["TEST-SL v1"], enforcement: "shared-gateway-outside-unit" }
     - { unit: "[ORG]AIOC-SL", port: "hu-out", direction: "output", type: "HU", identification: "live-human-sign-in-at-gateway", accepted_content: ["preview of the exact text to approve", "question in plain words", "gap list", "status of a request", "export", "brief to the Source Lifecycle Lead"], authority_limit: "information only; never a decision taken for the person", audit_trail: "the event record of each item", required_tests: ["TEST-SL v1"], enforcement: "shared-gateway-outside-unit" }
@@ -246,7 +250,7 @@ The blueprint writes `[ORG]` for the organisation's prefix, as central texts do 
 | The engineering division | `<to be set by the human hub>`. The product's engineering: the SL technical lead position directs it; the technical authority and auditor is the organisation's technical authority position (PRD, document control) |
 | The IT and infrastructure division | `<filled>` (repositories, the organisation's vault, the tool gateway's hosting) |
 | The builder of every tool | `<to be set by the human hub>` |
-| The Library blueprint this core is made from | 49GAION Source Lifecycle, part card `v3` (DRAFT); Protocol §13; this text is its mother blueprint |
+| The Library blueprint this core is made from | 49GAION Source Lifecycle, part card `v4` (DRAFT); Protocol §13; this text is its mother blueprint |
 | **The owner** (PRD §3) | the organisation whose sources SL keeps. In a group, the group and each of its entities; each entity is a universe (PRD §4.3) |
 | **The HOAC positions** | every human position that acts in SL: it contributes, approves, decides or consumes sources. Each is a position carrying a HOAC label (`[ORG]HOAC-GOV`, `[ORG]HOAC-TM` or `[ORG]HOAC-ACS`), never a person (Standard §5.2, Position Principle; `49GAION/DR-0011`). Some are positions of this AIOC (§17); others sit elsewhere in the organisation, for example the `[ORG]HOAC-GOV` position. Each human application role of the product is mapped to one (Annex A) |
 | **The register of positions** | the unit register's `position` and `arrangement` entries. The `occupancy` and `handover` entries are top management's own mechanism, in the private register copy; SL never reads them (`49GAION/DR-0011`, item 4; `DR-0013`). SL reaches a position only through its HU port, and only the tool gateway checks that a sign-in belongs to a current occupant |
@@ -262,6 +266,7 @@ The blueprint writes `[ORG]` for the organisation's prefix, as central texts do 
 - **Owners it serves.** Any owner: one person, a household, a company, a group or holding, or an institution (PRD §1).
 - **Boundaries with other AIOCs.**
   - **`[ORG]AIOC-TOM`** and every later design stage read sources only through the output socket, ask for what they lack only through this AIOC's Chief of Staff, and file their releases here (PRD FR-35 to FR-46). They never reach a person. This AIOC never designs.
+  - **`[ORG]AIOC-OER`**, the Operations Event Register, keeps what the organisation did, where SL keeps what it knows. It files only an entry a position asks to keep, as `correspondence`, and its projection of the work, as an `export`, within its write scope (§5.8), and sends gap signals (§5.2). It reads only the references of the sources its entries cite, never content, and SL never records its register (`49GAION/DR-0027`; **New** in v0.1.3).
   - **`[ORG]AIOC-OCO`** installs, fixes and upgrades this AIOC, builds its Panel, and carries its blueprint changes; it never grades it (Standard §2.3, item 9).
   - **The IT and infrastructure division** hosts the vault. SL never holds a secret; a socket to the vault comes later (PRD FR-33, D-16).
   - **A replacement source.** In a stage after the first, another source may stand beside SL, read only, through the reading part's own adapter. Asking and filing stay with SL (Protocol §13, item 7; the reading proposed by the Target Operating Model mother, `github.com/49g-holding/49aioc-tom`, `upstream/PROPOSALS.md`, item 8).
@@ -453,16 +458,16 @@ TEST-SL-SLCR v1 (TEST-SL v1, cases 1, 2, 19, 20, 31, 82) · result `NOT_RUN`
 | What it is | A comparison of what the owner holds with what an owner of its kind normally needs, which produces a list of gaps in plain words, ranked by consequence. Every profile starts from the essentials checklist (Annex F.2; **New** in v0.1.2). |
 | Purpose | Tell the owner what is missing, before anyone needs it. |
 | Scope | does: compare against the owner's profile; rank by consequence; offer to fill a gap by upload or by talk; record "not applicable" once; turn an accepted `document` or `export` needs request into a gap (§5.9); keep the essentials checklist and show the essentials still missing beside a Design Request (Annex F.2); list a term the sources use and never define (Annex F.1); does not: decide that a gap matters to the owner; ask again after "not applicable"; draft the content of a gap |
-| Inputs | the corpus at its current version; the owner's profile set (configuration; Annex C), which starts from the essentials checklist (Annex F.2) |
+| Inputs | the corpus at its current version; the owner's profile set (configuration; Annex C), which starts from the essentials checklist (Annex F.2); gap signals from `[ORG]AIOC-OER`, one per act done without a source, by reference to its register entry (**New** in v0.1.3) |
 | Outputs | the gap list, versioned; one gap per missing item, with its consequence and how to fill it |
 | Limits | owner profiles are configuration, never code; a gap is never closed by silence |
 | Sources | PRD FR-28, FR-35; Protocol §13, item 3; the carried CS1 stewardship |
 | Status | draft |
-| Done when | TEST-SL v1, cases 6, 21, 89 pass |
+| Done when | TEST-SL v1, cases 6, 21, 89, 94 pass |
 #### Process (SOP)
 | Field | Content |
 |---|---|
-| Trigger | a new owner; a change in the corpus; a change of profile; an accepted `document` or `export` needs request |
+| Trigger | a new owner; a change in the corpus; a change of profile; an accepted `document` or `export` needs request; a gap signal |
 | Steps | 1. **Gap Finder**: read the corpus and the profile set → *comparison* (run record). 2. **Gap Finder**: write each gap with its consequence, ranked → *gap list* (version). 3. **Chief of Staff**: show the list to the HOAC positions, with the way to fill each gap → *gap notice* (event). 4. **HOAC position** of the owner: upload, talk (§5.1), or mark "not applicable" → *answer* (event). 5. **Chief of Staff**: when a Design Request is put to its approving position, show beside it the essentials still missing (Annex F.2) → *essentials notice* (event). |
 | States | open → filled / not applicable / open past its date |
 | Failure and recovery | a profile that cannot be read leaves the list unrefreshed, labelled so, and goes to the Lead |
@@ -482,10 +487,10 @@ TEST-SL-SLCR v1 (TEST-SL v1, cases 1, 2, 19, 20, 31, 82) · result `NOT_RUN`
 | Escalation | through the Chief of Staff |
 | Tools and access | the corpus, read only; the profile set |
 | Deputy and cover | none |
-| Fixed test and score | TEST-SL-SLGF v1 (cases 6, 21, 89) |
+| Fixed test and score | TEST-SL-SLGF v1 (cases 6, 21, 89, 94) |
 | Card version and status | v0.1.0 · draft |
 #### Fixed test
-TEST-SL-SLGF v1 (TEST-SL v1, cases 6, 21, 89) · result `NOT_RUN`
+TEST-SL-SLGF v1 (TEST-SL v1, cases 6, 21, 89, 94) · result `NOT_RUN`
 
 ### 5.3 Classification and Sharing
 #### Definition
@@ -687,7 +692,7 @@ TEST-SL v1, cases 45 to 49, 58 (owner: `[ORG]CELL-SLL`) · result `NOT_RUN`
 | Limits | no connection works without a grant signed by the Lead at the tool gateway as `connect-external-port`; a wider scope is `grant-or-widen-access`; no bot approves or sets a scope; revocation by the Lead or any position above it takes effect at the gateway first and is never held; every connection has its own token, held only in the platform's secret store or behind the gateway, written nowhere; scope expiry is checked on every read |
 | Sources | PRD FR-31, FR-32, FR-41 to FR-46; Protocol §13, items 4 and 5; Library TEST-SOURCE-LIFECYCLE v1, cases 5, 6, 8 to 15 |
 | Status | draft; FR-41 to FR-46 **Proposed** until PRD D-20 |
-| Done when | TEST-SL v1, cases 5, 6, 8 to 15, 24, 25, 34 to 39, 87 and 91 pass |
+| Done when | TEST-SL v1, cases 5, 6, 8 to 15, 24, 25, 34 to 39, 87, 91, 92, 93 and 95 pass |
 
 **The reference** (PRD FR-41; the sockets contract's source reference). The ID, version and SHA-256 hash; `held` or `not held`; the snapshot ID; the origin kind (Annex B); the status from SL's own list (draft, in review, approved, in force, superseded); the confidentiality level; for an export, the date it is as of; and, for an item from conversation, each statement's label with its anchor.
 
@@ -700,10 +705,11 @@ TEST-SL v1, cases 45 to 49, 58 (owner: `[ORG]CELL-SLL`) · result `NOT_RUN`
 | `[ORG]AIOC-TOM` | `operating model`; `design report` (its readiness and held reports) |
 | `[ORG]AIOC-PPD` | `process and position design`; `design report` (its returns to TOM) |
 | `[ORG]AIOC-DI` | `delivery and implementation`; `design report` (its returns to PPD and TOM) |
+| `[ORG]AIOC-OER` | `correspondence` (an entry of its register that a position asks to keep, fixed as received); `export` (its projection of the work as it runs, by role-type and process, after its HF-17 decision, Annex F.3). **New** in v0.1.3 (`49GAION/DR-0027`). It is not a design stage. Its read is references only (ID, version, status, held or not held) of the sources its entries cite, never content, under its signed grant; the notices of this section reach it for every version an entry cites |
 
 A design report that holds a return is filed with the hash of the return as sent, and each later version of the return supersedes the one before; the filed copy never changes. The approval screen states plainly that Strictly confidential items will be visible. A partial scope cannot be granted for this connector type.
 
-**Filing** (PRD FR-43). A connected part with a write scope files a source of one of its own origin kinds, on behalf of a named HOAC position whose answering sign-in has a current contributor agreement. The filing is content-addressed, records what it supersedes, and takes its status from the approval decision it cites. A filing without a write scope, or without a contributor position, is refused.
+**Filing** (PRD FR-43). A connected part with a write scope files a source of one of its own origin kinds, on behalf of a named HOAC position whose answering sign-in has a current contributor agreement. The filing is content-addressed, records what it supersedes, and takes its status from the approval decision it cites. A filing without a write scope, or without a contributor position, is refused. **Correspondence** (**New** in v0.1.3): a source of origin kind `correspondence` is filed only by `[ORG]AIOC-OER`, on behalf of the position that asked to keep the entry; its hash equals the register entry's content hash; it is class EVIDENCE, kept as received, and never served as the owner's own statement (Annex B).
 
 **Notices** (PRD FR-45). On a revocation, a narrowing, a reclassification or a supersession that affects references a part has read, that part receives a notice naming each affected reference and version, never the content.
 
@@ -721,7 +727,7 @@ A design report that holds a return is filed with the hash of the return as sent
 #### Role card
 No AI Cell of its own. The socket's code steps are run by the Chief of Staff; the grant is the Lead's.
 #### Fixed test
-TEST-SL v1, cases 5, 6, 8 to 15, 24, 25, 34 to 39, 87 and 91 (owner: `[ORG]CELL-SLL`) · result `NOT_RUN`
+TEST-SL v1, cases 5, 6, 8 to 15, 24, 25, 34 to 39, 87, 91, 92, 93 and 95 (owner: `[ORG]CELL-SLL`) · result `NOT_RUN`
 
 ### 5.9 Needs Requests
 #### Definition
@@ -787,7 +793,7 @@ TEST-SL v1, cases 27, 61, 72 (owner: `[ORG]CELL-SLL`) · result `NOT_RUN`
 - **With connected parts** (the design stages `[ORG]AIOC-TOM`, `[ORG]AIOC-PPD` and `[ORG]AIOC-DI`, and any other): through the 49GAION Operating Protocol only. A connected part's needs request is a sub-item of its own Work Item; SL answers the sub-item and never opens a new item back, so the chain never loops (Protocol §4.6, item 2). Reads and filings pass through the output socket within the grant. Every route passes the tool gateway.
 - **With the HOAC positions**: through the HU ports, in the product's application, under a live sign-in at the tool gateway (§4.4). The Chief of Staff is the only Cell that asks them anything for a connected part.
 - **With `[ORG]AIOC-OCO`**: install, fixes, upgrades, the Panel, and every blueprint change, as `design-proposal` Work Items (template §6).
-- **Routing rows this AIOC contributes**: `needs request → [ORG]AIOC-SL`; `filing of origin kind operating model, process and position design, delivery and implementation, or design report → [ORG]AIOC-SL`; `read of a source → [ORG]AIOC-SL output socket`.
+- **Routing rows this AIOC contributes**: `needs request → [ORG]AIOC-SL`; `filing of origin kind operating model, process and position design, delivery and implementation, or design report → [ORG]AIOC-SL`; `filing of origin kind correspondence or export from [ORG]AIOC-OER → [ORG]AIOC-SL`; `gap signal → [ORG]AIOC-SL`; `read of a source → [ORG]AIOC-SL output socket`.
 - **Requests and objections.** Owners do not design or change this AIOC's AIs: every proposal, correction or critique is a `design-proposal` Work Item to OCO; where they disagree, the Lead may hold the objection open until it reaches the position accountable for OCO, which decides.
 
 ## 7. Records and where things live
@@ -864,7 +870,7 @@ All model calls go through the shared AI gateway in the `[ORG]AION` (Standard §
 
 ## 9. Fixed tests: index, triggers and scores
 
-The cases are written in `tests/TEST-SL.md`. Cases 1 to 16 are the Library's TEST-SOURCE-LIFECYCLE v1, cases 1 to 16, unchanged. Cases 17 to 72 are the PRD's own acceptance, one case per requirement. Cases 73 to 91 test this AIOC's form.
+The cases are written in `tests/TEST-SL.md`. Cases 1 to 16 are the Library's TEST-SOURCE-LIFECYCLE v1, cases 1 to 16, unchanged. Cases 17 to 72 are the PRD's own acceptance, one case per requirement. Cases 73 to 91 test this AIOC's form. Cases 92 to 95 test the feeds of the Operations Event Register (**New** in v0.1.3).
 
 | Capability | Test ID and version | Evidence level | Last run | Result |
 |---|---|---|---|---|
@@ -873,13 +879,13 @@ The cases are written in `tests/TEST-SL.md`. Cases 1 to 16 are the Library's TES
 | Input socket | TEST-SL v1, cases 3, 4, 17, 18, 26, 40, 60, 75, 82 | MEASURED | — | `NOT_RUN` |
 | Panel | default; TEST-SL v1, case 76 | MEASURED | — | `NOT_RUN` |
 | Conversation to Record | TEST-SL-SLCR v1 | MEASURED | — | `NOT_RUN` |
-| Gap Finding | TEST-SL-SLGF v1 (cases 6, 21, 89) | MEASURED | — | `NOT_RUN` |
+| Gap Finding | TEST-SL-SLGF v1 (cases 6, 21, 89, 94) | MEASURED | — | `NOT_RUN` |
 | Classification and Sharing | TEST-SL-SLSC v1; TEST-SL v1, case 90 | MEASURED | — | `NOT_RUN` |
 | Document Production | TEST-SL-SLD v1; TEST-SL-SLIA v1; TEST-SL v1, case 88 | MEASURED | — | `NOT_RUN` |
 | Publication and Activation | TEST-SL v1, cases 53 to 55, 57 | MEASURED | — | `NOT_RUN` |
 | Revision and Retirement | TEST-SL v1, cases 56, 61 | MEASURED | — | `NOT_RUN` |
 | Agent and Knowledge Governance | TEST-SL v1, cases 45 to 49, 58 | MEASURED | — | `NOT_RUN` |
-| Connections and the Output Socket | TEST-SL v1, cases 5, 6, 8 to 15, 24, 25, 34 to 39, 87, 91 | MEASURED | — | `NOT_RUN` |
+| Connections and the Output Socket | TEST-SL v1, cases 5, 6, 8 to 15, 24, 25, 34 to 39, 87, 91, 92, 93, 95 | MEASURED | — | `NOT_RUN` |
 | Needs Requests | TEST-SL-SLCS v1 (cases 28 to 33, 77, 80, 81) | MEASURED | — | `NOT_RUN` |
 | Trial and Exit | TEST-SL v1, cases 27, 61, 72 | MEASURED | — | `NOT_RUN` |
 | Type (Foundational) | TEST-SL v1, case 15 | MEASURED | — | `NOT_RUN` |
@@ -952,6 +958,7 @@ Money, people and legal matters are marked. The PRD's open decisions are named b
 | H-14 | PRD FR-36 says the holder of a non-delegable row's seat "is found through the installation's holder register". Under Standard §1.1, item 9 (proposed by `49GAION/DR-0013`), SL addresses the position through its HU port, and only the tool gateway checks the sign-in. Proposed: the PRD's text is aligned when D-20 is next opened | the `[ORG]HOAC-GOV` position, with the SL technical lead | §5.9 and Annex D follow the position reading |
 | H-15 | The organisation dictionary, the essentials checklist and the rule for records of the work (Annex F) are **New** rules that change the product. Proposed: PRD FR-28 (profiles open with the essentials), FR-41 (an export of records of the work) and a new requirement for the dictionary, at the PRD's next opening; the v0.6 sockets contract under D-20 | the `[ORG]HOAC-GOV` position, with the SL technical lead | the blueprint states the rules; the PRD follows |
 | H-16 | **Legal; people.** For each export of records of the work: its impact assessment and its decision on it (HF-17; where personal data moves, `export-share-or-purge-personal-data`) | the position that holds data protection (HF-17) | the export is not served (Annex F.3) |
+| H-17 | The feeds of the Operations Event Register (the origin kind `correspondence`, its scope, its references-only read, gap signals) are **New** rules that change the product. Proposed: PRD FR-41 (origin kinds), FR-43 (filing) and FR-28 (gaps) at the PRD's next opening | the `[ORG]HOAC-GOV` position, with the SL technical lead | the blueprint states the rules; the PRD follows |
 
 ## 14. Change log
 
@@ -961,6 +968,7 @@ Money, people and legal matters are marked. The PRD's open decisions are named b
 | v0.1.1 | 2026-10-16 | Takes the filings of every design stage (`49GAION/DR-0016` to `DR-0018`): the origin kinds `process and position design` and `delivery and implementation`; a write scope per design stage, limited to its own kinds and its design reports (§5.8); a filed return keeps the hash of the return as sent. Wording under `49GAION/DR-0015`: a filing names a position that holds a contributor agreement, never its occupant. TEST-SL v1, case 87 | v1.5.0 at `e89ed1d` | first instance |
 | v0.1.2 | 2026-10-16 | Adds three rules (`49GAION/DR-0023`; Annex F, new): the organisation dictionary, kept through Document Production, with definitions only from sources or approved statements, served by reference to every design stage; the essentials checklist opening every profile (strategy, plan, measures, structure of positions, processes, meetings, dictionary), a flag only, shown beside a Design Request; records of the work as it runs, recorded only as the owner's projection by role-type and process after an impact assessment and an HF-17 decision, and refused when they say who did the work. Takes the v0.6 sockets contract of the Target Operating Model mother v0.6.0 (priority on element rows; the aggregation of an export request). H-15, H-16. TEST-SL v1, cases 88 to 91 | v1.5.0 at `e89ed1d` | first instance |
 | v0.1.2 (mother) | 2026-10-16 | This mother blueprint, written from the first instance's `v0.1.2` with every value of that organisation removed: `<organisation>`, `<org>` and `<filled>` placeholders, positions only, sources by public reference; no rule added, changed or removed (`49GAION/DR-0024`; `decisions/DR-0001`). TEST-SL v1 maps the Library's TEST-SOURCE-LIFECYCLE v3 | v1.5.0 at `e89ed1d` | this repository, pull request #1 |
+| v0.1.3 (mother) | 2026-10-17 | Takes the feeds of the Operations Event Register (`49GAION/DR-0027`): the origin kind `correspondence`, class EVIDENCE, fixed as received, filed only by `[ORG]AIOC-OER` on behalf of the position that asked to keep the entry, with the entry's content hash; the register's scope (it writes `correspondence`, and `export` for its projection of the work under Annex F.3; it reads references only, and receives notices for the versions its entries cite); gap signals into Gap Finding. H-17. TEST-SL v1, cases 92 to 95, mapping the Library's TEST-SOURCE-LIFECYCLE v4, cases 27 to 29 | v1.5.0 at `e89ed1d` | this repository, pull request #2 |
 
 ---
 
@@ -1034,8 +1042,8 @@ The parts inside this AIOC (`docs/CELLS-AND-PODS.md` of `49GAION-aioc`). The rol
 parts:
   defaults:
     accountable_to: "[ORG]CELL-SLL"
-    card_version: "v0.1.2"
-    version: "0.1.2"
+    card_version: "v0.1.3"
+    version: "0.1.3"
     lifecycle_state: "designed"
     test_version: "v1"
     test_owner: "[ORG]CELL-SLL"
@@ -1068,8 +1076,8 @@ parts:
       type: "AI Chief of Staff"
       filler_kind: "ai"
       cell_kind: "chief-of-staff-cell"
-      test: { id: "TEST-SL-SLCS", cases: "3 to 7, 9 to 12, 15, 17, 18, 24, 26, 28 to 36, 38, 40, 44, 53 to 55, 57, 59, 60, 73 to 77, 80 to 83" }
-      ai_in: ["admitted item", "connection request", "read request", "needs request", "missing report", "needs status", "filing", "draft items", "classification proposal", "gap list", "contradiction record", "candidate", "audit finding"]
+      test: { id: "TEST-SL-SLCS", cases: "3 to 7, 9 to 12, 15, 17, 18, 24, 26, 28 to 36, 38, 40, 44, 53 to 55, 57, 59, 60, 73 to 77, 80 to 83, 92 to 95" }
+      ai_in: ["admitted item", "connection request", "read request", "needs request", "missing report", "needs status", "filing", "gap signal", "draft items", "classification proposal", "gap list", "contradiction record", "candidate", "audit finding"]
       ai_out: ["source reference", "needs answer", "needs status", "notice", "filing receipt", "dispatch to a Cell", "decision request to the Source Lifecycle Lead"]
       hu_out: ["preview of the exact text to approve", "question in plain words", "gap list", "brief to the Source Lifecycle Lead"]
       external_ports:
@@ -1082,11 +1090,11 @@ parts:
     - { code: "[ORG]CELL-SLIA", full_name: "Source Lifecycle Independent Auditor", role: "Independent Auditor", parent: "[ORG]AIOC-SL", type: "AI Agent", filler_kind: "ai", test: { id: "TEST-SL-SLIA", cases: "50, 51, 79" }, ai_in: ["candidate", "its evidence", "the controlling sources"], ai_out: ["audit finding"], bot: { allowed_actions: ["audit a candidate and write findings"], ask_first_actions: ["anything outside its role card"] } }
     - { code: "[ORG]CELL-SLCR", full_name: "Source Lifecycle Conversation Recorder", role: "Conversation Recorder", parent: "[ORG]POD-SLIR", type: "AI Agent", filler_kind: "ai", test: { id: "TEST-SL-SLCR", cases: "1, 2, 19, 20, 31, 82" }, ai_in: ["conversation", "explainer template"], ai_out: ["draft items with statement labels"], bot: { allowed_actions: ["ask plain questions", "draft and label items", "read back what was said"], ask_first_actions: ["anything outside its role card"] } }
     - { code: "[ORG]CELL-SLSC", full_name: "Source Lifecycle Source Classifier", role: "Source Classifier", parent: "[ORG]POD-SLIR", type: "AI Agent", filler_kind: "ai", test: { id: "TEST-SL-SLSC", cases: "22, 23, 42, 43" }, ai_in: ["admitted item"], ai_out: ["classification proposal"], bot: { allowed_actions: ["propose a category, class, confidentiality level, tags and document type, with reasons"], ask_first_actions: ["anything outside its role card"] } }
-    - { code: "[ORG]CELL-SLGF", full_name: "Source Lifecycle Gap Finder", role: "Gap Finder", parent: "[ORG]POD-SLIR", type: "AI Agent", filler_kind: "ai", test: { id: "TEST-SL-SLGF", cases: "6, 21, 89" }, ai_in: ["corpus, read only", "owner profile set"], ai_out: ["gap list"], bot: { allowed_actions: ["compare holdings with the profile and list gaps, ranked"], ask_first_actions: ["anything outside its role card"] } }
+    - { code: "[ORG]CELL-SLGF", full_name: "Source Lifecycle Gap Finder", role: "Gap Finder", parent: "[ORG]POD-SLIR", type: "AI Agent", filler_kind: "ai", test: { id: "TEST-SL-SLGF", cases: "6, 21, 89, 94" }, ai_in: ["corpus, read only", "owner profile set", "gap signal"], ai_out: ["gap list"], bot: { allowed_actions: ["compare holdings with the profile and list gaps, ranked"], ask_first_actions: ["anything outside its role card"] } }
     - { code: "[ORG]CELL-SLCA", full_name: "Source Lifecycle Consistency Auditor", role: "Consistency Auditor", parent: "[ORG]POD-SLIR", type: "AI Agent", filler_kind: "ai", test: { id: "TEST-SL-SLCA", cases: "5, 20, 43" }, ai_in: ["new source", "corpus, read only"], ai_out: ["contradiction record"], bot: { allowed_actions: ["find and record contradictions and conflicts without ruling"], ask_first_actions: ["anything outside its role card"] } }
     - { code: "[ORG]CELL-SLD", full_name: "Source Lifecycle Drafter", role: "Drafter", parent: "[ORG]POD-SLDP", type: "AI Agent", filler_kind: "ai", test: { id: "TEST-SL-SLD", cases: "41, 44, 46, 88" }, ai_in: ["classified request", "eligible knowledge"], ai_out: ["candidate"], bot: { allowed_actions: ["draft a candidate within its governed package"], ask_first_actions: ["anything outside its role card"] } }
   pods:
-    - { code: "[ORG]POD-SLIR", full_name: "Source Lifecycle Intake and Recording", type: "AI Pod", inner_units: ["[ORG]CELL-SLCR", "[ORG]CELL-SLSC", "[ORG]CELL-SLGF", "[ORG]CELL-SLCA"], top_cell: "[ORG]CELL-SLCR", test: { id: "TEST-SL-SLIR", cases: "1, 2, 5, 6, 19 to 23, 31, 42, 43, 89, 90" }, ai_in: ["admitted item", "conversation", "explainer template", "owner profile set"], ai_out: ["draft items", "classification proposal", "gap list", "contradiction record"] }
+    - { code: "[ORG]POD-SLIR", full_name: "Source Lifecycle Intake and Recording", type: "AI Pod", inner_units: ["[ORG]CELL-SLCR", "[ORG]CELL-SLSC", "[ORG]CELL-SLGF", "[ORG]CELL-SLCA"], top_cell: "[ORG]CELL-SLCR", test: { id: "TEST-SL-SLIR", cases: "1, 2, 5, 6, 19 to 23, 31, 42, 43, 89, 90, 94" }, ai_in: ["admitted item", "conversation", "explainer template", "owner profile set"], ai_out: ["draft items", "classification proposal", "gap list", "contradiction record"] }
     - { code: "[ORG]POD-SLDP", full_name: "Source Lifecycle Document Production", type: "AI Pod", inner_units: ["[ORG]CELL-SLD"], top_cell: "[ORG]CELL-SLD", test: { id: "TEST-SL-SLDP", cases: "41, 44, 46, 88" }, ai_in: ["classified request", "eligible knowledge"], ai_out: ["candidate"] }
 ```
 
@@ -1155,7 +1163,9 @@ The product names its application roles in code (`src/lib/stageRolePolicy.ts`; 1
 
 A label is never raised: an `inferred` or `assumed` statement becomes `stated` only when the person says it in their own words and approves it. An inferred or assumed item is never shown or exported as stated.
 
-**Origin kinds** (PRD FR-41): `document`, `explainer`, `confirmation`, `status`, `export`, `decision`, `operating model`, `process and position design`, `delivery and implementation`, `design report`. The two kinds of the later design stages are **New** in v0.1.1; the PRD's list follows at its next opening.
+**Origin kinds** (PRD FR-41): `document`, `explainer`, `confirmation`, `status`, `export`, `decision`, `operating model`, `process and position design`, `delivery and implementation`, `design report`, `correspondence`. The two kinds of the later design stages are **New** in v0.1.1, and `correspondence` in v0.1.3; the PRD's list follows at its next opening.
+
+**Correspondence** (**New** in v0.1.3; `49GAION/DR-0027`). A letter, a formal e-mail, a post or another formal item that the organisation sent or received, kept because a position asked to keep its entry in the Operations Event Register. It is class EVIDENCE: evidence that the item was sent or received as it stands. It is kept as received, never edited, and its hash equals the register entry's content hash. Its status is `approved` once the asking position approves the filing. Its content is never served as the owner's own statement, and its statements carry no label of the owner (statement labels apply to the owner's own words). Correspondence with counsel is filed by reference only, Strictly confidential.
 
 **Status** (PRD FR-29; the reference's list): `draft`, `in review`, `approved`, `in force`, `superseded`. A source has exactly one valid version (Protocol §8).
 
@@ -1278,5 +1288,6 @@ Silence closes nothing. An overdue request is reminded, then escalated, under `w
 4. **Refused.** An export offered with a field that says who did the work (a name, an identifier, a contact) is not recorded, and nothing of it is kept; the reason is `person-level records`. An export without its impact assessment and its HF-17 decision is not served.
 5. **Served** as origin kind `export`, with its `as_of` date (§5.8). Where a needs request asked for it, the request states the aggregation `by role-type and process` (the v0.6 sockets contract).
 6. **Why.** A connected design stage may read how the work runs today, by role-type and process, and never anything about a person. Where no such export exists, nothing is put in its place.
+7. **From the Operations Event Register** (**New** in v0.1.3; `49GAION/DR-0027`). Where the organisation has `[ORG]AIOC-OER`, its projection of the work by role-type and process is one such export. It is filed by that part within its write scope (§5.8), under every rule of this annex, and refused at this AIOC's Input socket if any field says who did the work.
 
-*`[ORG]AIOC-SL` mother blueprint v0.1.2 · Powered by 49GAION*
+*`[ORG]AIOC-SL` mother blueprint v0.1.3 · Powered by 49GAION*
