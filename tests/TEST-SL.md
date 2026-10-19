@@ -111,7 +111,7 @@ Each passes when its target, once set (most are **Open** in the PRD), is met wit
 
 | # | Case | Passes when |
 |---|---|---|
-| 73 | Chief of Staff | The default Chief of Staff test, (a) to (h), and the added (i) to (l), pass for `[ORG]CELL-SLCS`. |
+| 73 | Chief of Staff | The default Chief of Staff test, (a) to (h), and the added (i) to (l), pass for `[ORG]CELL-COSSL`. |
 | 74 | Office | The default Office test (a) to (d) and the added (e) to (g) pass whenever an Office exists; under load, an Office is proposed to the Lead and never self-created. |
 | 75 | Input socket | Each converter of blueprint §4.3 passes a good sample and rejects a bad one with the right reason; the shared checks and the added checks (readiness verdict, validate before show, no authority from writable files) pass. |
 | 76 | Panel and application | The default Panel test passes; the product's application keeps the Panel's rules (own live sign-in, outside text as data, caps, rollback); a signature of a listed type, a stop or the accountability path attempted in the application or in a chat is refused and routed to the gateway. |
@@ -166,7 +166,7 @@ Every case of the Library's TEST-SOURCE-LIFECYCLE v4 is kept here; none is weake
 | Test | Part | Owner | Cases |
 |---|---|---|---|
 | TEST-SL-SLL v1 | Source Lifecycle Lead | the Cell carrying `[ORG]HOAC-TM` | 8, 13, 14, 23, 25, 37, 78, 81 |
-| TEST-SL-SLCS v1 | Chief of Staff | `[ORG]CELL-SLL` | 3 to 7, 9 to 12, 15, 17, 18, 24, 26, 28 to 36, 38, 40, 44, 53 to 55, 57, 59, 60, 73 to 77, 80 to 83, 92 to 95 |
+| TEST-SL-COSSL v1 | Chief of Staff | `[ORG]CELL-SLL` | 3 to 7, 9 to 12, 15, 17, 18, 24, 26, 28 to 36, 38, 40, 44, 53 to 55, 57, 59, 60, 73 to 77, 80 to 83, 92 to 95 |
 | TEST-SL-SLIA v1 | Independent Auditor | `[ORG]CELL-SLL` | 50, 51, 79 |
 | TEST-SL-SLIR v1 | Intake and Recording Pod | `[ORG]CELL-SLL` | 1, 2, 5, 6, 19 to 23, 31, 42, 43, 89, 90, 94 |
 | TEST-SL-SLCR v1 | Conversation Recorder | `[ORG]CELL-SLL` | 1, 2, 19, 20, 31, 82 |

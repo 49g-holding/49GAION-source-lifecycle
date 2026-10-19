@@ -5,11 +5,11 @@ full_name: Source Lifecycle Lead
 parent: '[ORG]AIOC-SL'
 accountable_to: '[ORG]CELL-TMS'
 type: Human Seat
-card_version: v0.1.3
-version: 0.1.3
+card_version: v0.1.4
+version: 0.1.4
 lineage:
   id: '[ORG]CELL-SLL'
-  version: 0.1.3
+  version: 0.1.4
   relation: original
 lifecycle_state: designed
 fixed_test:

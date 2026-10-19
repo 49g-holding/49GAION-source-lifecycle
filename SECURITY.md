@@ -1,6 +1,6 @@
 # Security
 
-**49GAION Source Lifecycle, mother blueprint `v0.1.3` · 17 October 2026.**
+**49GAION Source Lifecycle, mother blueprint `v0.1.4` · 19 October 2026.**
 
 - **No secrets.** No password, key, token, seed phrase or one-time code is ever written here, or accepted by Source Lifecycle in any input. Secrets live only in each organisation's vault. The credential IDs in `cards/bots/` are placeholders, never credentials.
 - **No sources and no organisation's data.** No source of any owner, and no value of any organisation, is ever written in this repository or in the 49GAION Library.
