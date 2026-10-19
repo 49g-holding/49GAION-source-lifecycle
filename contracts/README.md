@@ -1,14 +1,14 @@
 # The sockets contract
 
-**`[ORG]AIOC-SL` mother blueprint v0.1.2 · 16 October 2026.** The drafts are those of the Target Operating Model mother v0.6.0.
+**`[ORG]AIOC-SL` mother blueprint v0.1.4 · 19 October 2026.** The drafts are those of the Target Operating Model mother v0.6.1.
 
 The sockets contract is how every connected part talks to Source Lifecycle (PRD FR-31, FR-46; blueprint §5.8). Its first drafts were written by `[ORG]AIOC-TOM` and are kept where they were written. They are named here by path and hash, not copied, so that there is one home for each. Source Lifecycle adopts them, changes them or replaces them under PRD D-20 (blueprint §13, H-02). Until then they are **Proposed**.
 
-Source: `github.com/49g-holding/49aioc-tom`, v0.6.0, folder `contracts/`, at the merged commit `a8445cb006e6f2378b7694543fb65c5da48af41f`; each file is named by its hash, read back at that commit on 16 October 2026. The v0.4.0 drafts (commit `2ec2373`) are superseded: v0.6 adds the proposed and decided priority of an element row, and the aggregation of an export request for records of the work (blueprint §5.8; Annex F.3).
+Source: `github.com/49g-holding/49aioc-tom`, v0.6.1, folder `contracts/`, at the merged commit `302e98b4937609484adb5164c20b5ef22211c411`; each file is named by its hash, read back at that commit on 19 October 2026. From v0.6.0 (`a8445cb`) only the needs request changed: its `raised_by` names the Target Operating Model's Chief of Staff by its COS code, `[ORG]CELL-COSTOM` (Naming Standard R16), and its `$id` moved to `v0.6.1`; the other five files are byte-identical. The v0.4.0 drafts (commit `2ec2373`) are superseded: v0.6 adds the proposed and decided priority of an element row, and the aggregation of an export request for records of the work (blueprint §5.8; Annex F.3).
 
 | Contract | File | `$id` | SHA-256 |
 |---|---|---|---|
-| needs request | `needs-request.schema.json` | `urn:49gaion:library:tom:needs-request:v0.6` | `92c24d90547735110a2c23e492e59a80d12875db53cf39374bd76168cc425cb4` |
+| needs request | `needs-request.schema.json` | `urn:49gaion:library:tom:needs-request:v0.6.1` | `5293e10c6ee24dd38784628b415e7ed8e470f1b7c695aa53dea17e684345d4e4` |
 | needs answer | `needs-answer.schema.json` | `urn:49gaion:library:tom:needs-answer:v0.6` | `a36a4cbe8add05f67c14ead05c26e068fe52ca55f1113f317ce9fb601371beb1` |
 | needs status | `needs-status.schema.json` | `urn:49gaion:library:tom:needs-status:v0.3` | `5b9a397b888455d5e881b7cdbb1c2d3dbc8e4bbfdc9b1fa70a99da9c24aa44f2` |
 | Missing Report | `missing-report.schema.json` | `urn:49gaion:library:tom:missing-report:v0.3` | `bce0dc4e66a01001a8700ce4ab301c0d47ec0f3efb2316931091df23dd904f11` |
