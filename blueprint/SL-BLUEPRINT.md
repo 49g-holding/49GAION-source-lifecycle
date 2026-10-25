@@ -67,6 +67,8 @@ blueprint:
 
 **Where this blueprint stands.** In the first instance, the product exists and runs on a demonstration branch; its live qualification there was 0 of 3 cycles when this mother was written (PRD §10). Most of what Protocol §13 and the next stage need is not built yet (PRD §11). This blueprint states what the AIOC is. The PRD states what the product must do. The two must match (§9, case 85). The decisions only a human seat can take are listed once, in §13.
 
+> **Reading (49GAION DR-0041).** The complete definition of 49GAION, approved by its governing seat on 25 October 2026, is `49GAION-FRAMEWORK.md` in `github.com/49g-holding/49GAION`. Where this repository differs from it, the definition governs, and this text is read with it. Every rule here that names `[ORG]AIOC-OCO` or the human hub reads as the Top Management Group, the hub of the operation, human and AI. The panel is the organisation's own code interface, and the AI chat workspace is its back office. The readings are in [`decisions/DR-0003`](../decisions/DR-0003-the-readings-of-dr-0041.md). Nothing here is removed.
+
 ---
 
 ## 0. Identity and lineage

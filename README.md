@@ -2,6 +2,8 @@
 
 The mother repository of the Library part **49GAION Source Lifecycle**. In an `[ORG]AION`, the part is the AIOC `[ORG]AIOC-SL`. Public. It holds the mother blueprint only, for any organisation, with no organisation's data (`49GAION/DR-0024`; Naming Standard R9, addition 4).
 
+> **Reading (49GAION DR-0041).** The complete definition of 49GAION, approved by its governing seat on 25 October 2026, is `49GAION-FRAMEWORK.md` in `github.com/49g-holding/49GAION`. Where this repository differs from it, the definition governs, and this text is read with it. Every rule here that names `[ORG]AIOC-OCO` or the human hub reads as the Top Management Group, the hub of the operation, human and AI. The panel is the organisation's own code interface, and the AI chat workspace is its back office. The readings are in [`decisions/DR-0003`](decisions/DR-0003-the-readings-of-dr-0041.md). Nothing here is removed.
+
 Source Lifecycle keeps an organisation's own sources: its documents, and what its people say once they have approved it. It records each one, gives it a reference, classifies it and fixes it, so that every source has one valid version and a traceable origin. It is a product on its own, for any owner, and the first stage of every larger system: in 49GAION, every source enters through it (Protocol §13).
 
 The one-page summary is at the top of the blueprint.
