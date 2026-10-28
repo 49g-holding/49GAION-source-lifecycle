@@ -1,6 +1,6 @@
 # The sockets contract
 
-**`[ORG]AIOC-SL` mother blueprint v0.1.4 · 19 October 2026.** The drafts are those of the Target Operating Model mother v0.6.1.
+**`[ORG]AIOC-SL` mother blueprint v0.1.5 · 29 October 2026.** The drafts are those of the Target Operating Model mother v0.6.1.
 
 The sockets contract is how every connected part talks to Source Lifecycle (PRD FR-31, FR-46; blueprint §5.8). Its first drafts were written by `[ORG]AIOC-TOM` and are kept where they were written. They are named here by path and hash, not copied, so that there is one home for each. Source Lifecycle adopts them, changes them or replaces them under PRD D-20 (blueprint §13, H-02). Until then they are **Proposed**.
 

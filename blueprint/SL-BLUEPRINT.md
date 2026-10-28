@@ -7,7 +7,7 @@ blueprint:
   organisation: "<organisation>"          # filled in each organisation's own copy
   type: "foundational"
   org_aion: "[ORG]AION"
-  blueprint_version: "v0.1.4"
+  blueprint_version: "v0.1.5"
   status: "draft"
   template:
     name: "49GAION AIOC Blueprint Template"
@@ -25,7 +25,7 @@ blueprint:
     functional: ["Conversation to Record", "Gap Finding", "Classification and Sharing", "Document Production", "Publication and Activation", "Revision and Retirement", "Agent and Knowledge Governance", "Connections and the Output Socket", "Needs Requests", "Trial and Exit"]
 ```
 
-# Blueprint · `[ORG]AIOC-SL` · Source Lifecycle · `v0.1.4`
+# Blueprint · `[ORG]AIOC-SL` · Source Lifecycle · `v0.1.5`
 
 **Draft, 15 October 2026; v0.1.1, 16 October 2026, takes the filings of every design stage (`49GAION/DR-0016` to `DR-0018`): two new origin kinds, `process and position design` and `delivery and implementation`, and a write scope for each stage limited to its own kinds and its design reports, which hold its returns. v0.1.2, 16 October 2026, adds the organisation dictionary, the essentials checklist and the rule for records of the work as it runs, and takes the v0.6 sockets contract (`49GAION/DR-0023`; Annex F). v0.1.3, 17 October 2026, takes the feeds of the Operations Event Register (`49GAION/DR-0027`): the origin kind `correspondence`, fixed as received; the register's write scope; and gap signals. v0.1.4, 19 October 2026: the Chief of Staff takes its COS code `[ORG]CELL-COSSL` (`decisions/DR-0002`).** **This is the mother blueprint** of the Library part 49GAION Source Lifecycle, for any organisation (`49GAION/DR-0024`; `decisions/DR-0001`). It was written from the blueprint of the part's first instance, `v0.1.2`, with every value of that organisation removed; each organisation fills its own copy (§0, §2.1). It sets the product, as its requirements document describes it, into the form of the 49GAION AIOC template: its card, its positions, its Cells and Pods, and each capability in four parts. It adds no product requirement. Every rule rests on a 49GAION text, on the product requirements document, the PRD of the Source Lifecycle product (cited by requirement ID; §0), or is new in this blueprint and marked **New**. Nothing here has run. Every fixed test reads `NOT_RUN`.
 
@@ -90,7 +90,7 @@ blueprint:
 | Made from | the Library part 49GAION Source Lifecycle, part card `v1` (DRAFT), and Protocol §13 |
 | Template | 49GAION AIOC Blueprint Template `v1.5.0` at `e89ed1d` (with the `v1.6.0` additions: mechanism register and Reserve, checks that are not fixed tests, the added Configuration rows, position codes only) |
 | Mother | 49GAION Source Lifecycle, part card `v1` |
-| Blueprint version and status | `v0.1.4` · draft |
+| Blueprint version and status | `v0.1.5` · draft |
 | Accountable seat (`[ORG]HOAC-ACS`) | the Source Lifecycle Lead, `[ORG]CELL-SLL`, a HOAC position. Who holds it is the organisation's own mechanism, outside the system; this AIOC never sees it (`49GAION/DR-0013`, `DR-0049`) |
 | Reports to | the Cell carrying `[ORG]HOAC-TM` |
 | Writing repository | `<org>aioc-sl`, private where it holds the organisation's data, plus `-records` for the AIOC's own run records and `-records-restricted` for records that name a person (Naming Standard R9; Protocol §14, item 6). The owner's sources never live in any of these (§7) |
@@ -117,7 +117,7 @@ card:
   inner_units: ["[ORG]CELL-SLL", "[ORG]CELL-COSSL", "[ORG]CELL-SLIA", "[ORG]POD-SLIR", "[ORG]POD-SLDP"]
   type: "foundational"
   org_aion: "[ORG]AION"
-  card_version: "v0.1.4"
+  card_version: "v0.1.5"
   input_door: "Chief of Staff"
   wake: { method: "queue", verified: false }
   receives:
@@ -185,7 +185,7 @@ card:
   anatomy:
     panel: { health: { tests: true, metrics: ["stuck", "returned", "late", "inputs refused", "previews waiting", "gaps open", "needs open", "needs past deadline", "grants active", "grants expiring", "notices sent", "candidates by stage", "publication verified", "live qualification cycles"] } }
     back_office: { converses_with_humans: true, hosts: ["Chief of Staff", "Office"], protocol_traffic: true }
-    definition: { location: "<org>aioc-sl, blueprint/SL-BLUEPRINT.md", version: "v0.1.4" }
+    definition: { location: "<org>aioc-sl, blueprint/SL-BLUEPRINT.md", version: "v0.1.5" }
     delivery: { rollback: "one-click" }
     connectors:
       - { role: "inbound data sources (document stores, code repositories, wikis)", connector: "data-source connector, one per source type", access_managed_in: "panel" }   # the Panel shows and requests it; the grant is signed at the tool gateway as connect-external-port (Protocol §13, item 5)
@@ -193,10 +193,10 @@ card:
       - { role: "broadcast", connector: "broadcast adapter, one per channel", access_managed_in: "panel" }
     gateway: { metering_id: "<per-AIOC metering id>" }
   full_name: "Source Lifecycle"
-  version: "0.1.4"
-  lineage: { id: "[ORG]AIOC-SL", version: "0.1.4", relation: "original" }
+  version: "0.1.5"
+  lineage: { id: "[ORG]AIOC-SL", version: "0.1.5", relation: "original" }
   lifecycle_state: "designed"
-  blueprint_version: "v0.1.4"
+  blueprint_version: "v0.1.5"
   template_version: "v1.5.0"
   accountable_to: "[ORG]CELL-TMS"         # example code of the Cell carrying [ORG]HOAC-TM (Naming Standard R15); never a Cell inside this AIOC
   top_cell: "[ORG]CELL-SLL"
@@ -954,7 +954,7 @@ Money, people and legal matters are marked. The PRD's open decisions are named b
 | H-08 | The agent-release role matrix (PRD D-11) and the final authority's disagreement policy (PRD D-05) | the technical authority position reconciles; the `[ORG]HOAC-GOV` position decides | §5.7 runs on the knowledge-release rule only |
 | H-09 | **People.** The product owner position, the first slice and the representative documents (PRD D-02) | the `[ORG]HOAC-GOV` position, or the delegated product owner | no qualification scope |
 | H-10 | **People.** The application role map: one HOAC position per human application role, in this AIOC or elsewhere in the organisation; and which HOAC positions to add to this AIOC for them (Annex A; §17) | the Cell carrying `[ORG]HOAC-TM`; the `[ORG]HOAC-GOV` position for ACS positions acting for it | the joining test fails (§15) |
-| H-11 | Approve this blueprint `v0.1.4`, with the exceptions of §11, as the design of `[ORG]AIOC-SL` | the human hub | it stays a draft; nothing is installed |
+| H-11 | Approve this blueprint `v0.1.5`, with the exceptions of §11, as the design of `[ORG]AIOC-SL` | the human hub | it stays a draft; nothing is installed |
 | H-12 | Confirm whether the product's server-side credential vault is the platform's secret store (§8) | the SL technical lead, with the IT and infrastructure division | connector grants cannot be checked against Protocol §13, item 5 |
 | H-13 | **Legal.** PRD FR-34 proposes deleting a silent trial owner's data after a read-only period. In a 49GAION installation, deletion is the listed type `dispose-records-or-data`, and an export or purge of personal data is `export-share-or-purge-personal-data`. Proposed: with no answer, the data stays read-only until the owner's HOAC position signs; the PRD's text is aligned when D-20 is next opened | the `[ORG]HOAC-GOV` position, with the SL technical lead | §5.10 follows the proposed reading |
 | H-14 | PRD FR-36 says the holder of a non-delegable row's seat "is found through the installation's holder register". Under Standard §1.1, item 9 (proposed by `49GAION/DR-0013`), SL addresses the position through its HU port, and only the tool gateway checks the sign-in. Proposed: the PRD's text is aligned when D-20 is next opened | the `[ORG]HOAC-GOV` position, with the SL technical lead | §5.9 and Annex D follow the position reading |
@@ -972,6 +972,7 @@ Money, people and legal matters are marked. The PRD's open decisions are named b
 | v0.1.2 (mother) | 2026-10-16 | This mother blueprint, written from the first instance's `v0.1.2` with every value of that organisation removed: `<organisation>`, `<org>` and `<filled>` placeholders, positions only, sources by public reference; no rule added, changed or removed (`49GAION/DR-0024`; `decisions/DR-0001`). TEST-SL v1 maps the Library's TEST-SOURCE-LIFECYCLE v3 | v1.5.0 at `e89ed1d` | this repository, pull request #1 |
 | v0.1.3 (mother) | 2026-10-17 | Takes the feeds of the Operations Event Register (`49GAION/DR-0027`): the origin kind `correspondence`, class EVIDENCE, fixed as received, filed only by `[ORG]AIOC-OER` on behalf of the position that asked to keep the entry, with the entry's content hash; the register's scope (it writes `correspondence`, and `export` for its projection of the work under Annex F.3; it reads references only, and receives notices for the versions its entries cite); gap signals into Gap Finding. H-17. TEST-SL v1, cases 92 to 95, mapping the Library's TEST-SOURCE-LIFECYCLE v4, cases 27 to 29 | v1.5.0 at `e89ed1d` | this repository, pull request #2 |
 | v0.1.4 (mother) | 2026-10-19 | The Chief of Staff takes its COS code: `[ORG]CELL-SLCS` → `[ORG]CELL-COSSL` (Naming Standard R16, `49GAION/DR-0028`; `decisions/DR-0002`). The old code is retired and kept in the card's lineage; the part test is renamed; nothing else changes | v1.5.0 at `e89ed1d` | this repository's pull request for this version |
+| v0.1.5 (mother) | 2026-10-29 | Released on the governing seat's word (`decisions/DR-0005`): it carries the records since v0.1.4, `decisions/DR-0003`, `decisions/DR-0004`; positions only (`49GAION/DR-0048`, `DR-0049`). Every card takes v0.1.5; the Protocol pin moves to the Operating Protocol `v2.1.0`. No other rule changes. |
 
 ---
 
@@ -1045,8 +1046,8 @@ The parts inside this AIOC (`docs/CELLS-AND-PODS.md` of `49GAION-aioc`). The rol
 parts:
   defaults:
     accountable_to: "[ORG]CELL-SLL"
-    card_version: "v0.1.4"
-    version: "0.1.4"
+    card_version: "v0.1.5"
+    version: "0.1.5"
     lifecycle_state: "designed"
     test_version: "v1"
     test_owner: "[ORG]CELL-SLL"
@@ -1295,4 +1296,4 @@ Silence closes nothing. An overdue request is reminded, then escalated, under `w
 6. **Why.** A connected design stage may read how the work runs today, by role-type and process, and never anything about a person. Where no such export exists, nothing is put in its place.
 7. **From the Operations Event Register** (**New** in v0.1.3; `49GAION/DR-0027`). Where the organisation has `[ORG]AIOC-OER`, its projection of the work by role-type and process is one such export. It is filed by that part within its write scope (§5.8), under every rule of this annex, and refused at this AIOC's Input socket if any field says who did the work.
 
-*`[ORG]AIOC-SL` mother blueprint v0.1.4 · Powered by 49GAION*
+*`[ORG]AIOC-SL` mother blueprint v0.1.5 · Powered by 49GAION*
