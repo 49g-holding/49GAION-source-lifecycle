@@ -14,7 +14,7 @@ The one-page summary is at the top of the blueprint.
 
 | Path | What it is |
 |---|---|
-| [`blueprint/SL-BLUEPRINT.md`](blueprint/SL-BLUEPRINT.md) | the mother blueprint, `v0.1.4`, on the 49GAION AIOC template |
+| [`blueprint/SL-BLUEPRINT.md`](blueprint/SL-BLUEPRINT.md) | the mother blueprint, `v0.1.5`, on the 49GAION AIOC template |
 | [`tests/TEST-SL.md`](tests/TEST-SL.md) | the fixed test, TEST-SL v1: 95 cases, every one `NOT_RUN`, with the Library's TEST-SOURCE-LIFECYCLE v4 kept and mapped |
 | [`cards/`](cards/) | the unit cards of its Pods and Cells, and the bot identity cards, generated from blueprint §17 |
 | [`contracts/README.md`](contracts/README.md) | the sockets contract: where its first drafts are, by path, commit and hash |
