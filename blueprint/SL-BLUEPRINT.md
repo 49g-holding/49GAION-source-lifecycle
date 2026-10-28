@@ -63,7 +63,7 @@ blueprint:
 > **Who decides**
 > - Every human position in SL is a **HOAC position**: a position, never a person. The organisation's HOAC positions decide everything that is theirs: their content, what is in force, who sees it, who connects. SL prepares and records; it never decides.
 > - SL has at least one HOAC position of its own: the Source Lifecycle Lead, its accountable `[ORG]HOAC-ACS` position. It approves each connection and its scope, and owns the tests of its parts. The organisation may add more HOAC positions to SL in SL's own design (§17).
-> - **No natural person exists in the system** (Standard §1.1, item 9). Who occupies a position, and how, is the organisation's top management's own mechanism (`[ORG]HOAC-TM`). SL never sees it; it deals with positions only.
+> - **No natural person exists in the system** (Standard §1.1, item 9). Who holds a position, and how, is the organisation's own mechanism, outside the system. SL never sees it; it deals with positions only.
 
 **Where this blueprint stands.** In the first instance, the product exists and runs on a demonstration branch; its live qualification there was 0 of 3 cycles when this mother was written (PRD §10). Most of what Protocol §13 and the next stage need is not built yet (PRD §11). This blueprint states what the AIOC is. The PRD states what the product must do. The two must match (§9, case 85). The decisions only a human seat can take are listed once, in §13.
 
@@ -91,7 +91,7 @@ blueprint:
 | Template | 49GAION AIOC Blueprint Template `v1.5.0` at `e89ed1d` (with the `v1.6.0` additions: mechanism register and Reserve, checks that are not fixed tests, the added Configuration rows, position codes only) |
 | Mother | 49GAION Source Lifecycle, part card `v1` |
 | Blueprint version and status | `v0.1.4` · draft |
-| Accountable seat (`[ORG]HOAC-ACS`) | the Source Lifecycle Lead, `[ORG]CELL-SLL`, a HOAC position. Who occupies it is top management's own mechanism; this AIOC never sees it (`49GAION/DR-0013`) |
+| Accountable seat (`[ORG]HOAC-ACS`) | the Source Lifecycle Lead, `[ORG]CELL-SLL`, a HOAC position. Who holds it is the organisation's own mechanism, outside the system; this AIOC never sees it (`49GAION/DR-0013`, `DR-0049`) |
 | Reports to | the Cell carrying `[ORG]HOAC-TM` |
 | Writing repository | `<org>aioc-sl`, private where it holds the organisation's data, plus `-records` for the AIOC's own run records and `-records-restricted` for records that name a person (Naming Standard R9; Protocol §14, item 6). The owner's sources never live in any of these (§7) |
 | Code project | `<org>aioc-sl`, on the organisation's code platform: the product's code and its PRD, the PRD's single home (PRD D-19) |
@@ -255,7 +255,7 @@ The blueprint writes `[ORG]` for the organisation's prefix, as central texts do 
 | The Library blueprint this core is made from | 49GAION Source Lifecycle, part card `v4` (DRAFT); Protocol §13; this text is its mother blueprint |
 | **The owner** (PRD §3) | the organisation whose sources SL keeps. In a group, the group and each of its entities; each entity is a universe (PRD §4.3) |
 | **The HOAC positions** | every human position that acts in SL: it contributes, approves, decides or consumes sources. Each is a position carrying a HOAC label (`[ORG]HOAC-GOV`, `[ORG]HOAC-TM` or `[ORG]HOAC-ACS`), never a person (Standard §5.2, Position Principle; `49GAION/DR-0011`). Some are positions of this AIOC (§17); others sit elsewhere in the organisation, for example the `[ORG]HOAC-GOV` position. Each human application role of the product is mapped to one (Annex A) |
-| **The register of positions** | the unit register's `position` and `arrangement` entries. The `occupancy` and `handover` entries are top management's own mechanism, in the private register copy; SL never reads them (`49GAION/DR-0011`, item 4; `DR-0013`). SL reaches a position only through its HU port, and only the tool gateway checks that a sign-in belongs to a current occupant |
+| **The register of positions** | the unit register's `position` entries. Who holds a position, and its history, is the organisation's own mechanism, outside the system; SL never sees it (`49GAION/DR-0049`). SL reaches a position only through its HU port, and only the tool gateway checks the credential the organisation's mechanism issued for that position |
 | **The tool gateway** | held in the Charter (Standard §4.4, item 11). Every connection, every signature of a listed type and every stop passes through it |
 
 ### 2.2 Placement
@@ -278,9 +278,9 @@ The blueprint writes `[ORG]` for the organisation's prefix, as central texts do 
 
 ## 3. Positions
 
-| Position (standard title) | Purpose | Reports to | Run today by | Deputy |
+| Position (standard title) | Purpose | Reports to | Run today by | Cover |
 |---|---|---|---|---|
-| Source Lifecycle Lead (HOAC position) | the accountable seat of this AIOC: approves and scopes each connection (`connect-external-port`), revokes; owns the fixed tests of its parts; rules on what the Chief of Staff raises; acts as the product's SL administrator for sharing within the owner's policy. Answers for the AIOC, never for the owner's content or decisions | the Cell carrying `[ORG]HOAC-TM` | a HOAC position (`[ORG]HOAC-ACS`). Who occupies it, and how, is top management's own mechanism; this AIOC never sees it (`49GAION/DR-0013`). While the position shows no occupant, the Chief of Staff only advises, matters go to the Cell carrying `[ORG]HOAC-TM`, and every act that needs this position's signature waits (Protocol §4.10, item 21) | as top management arranges (`appoint-acting-filler`, Standard §4.1, item 12) |
+| Source Lifecycle Lead (HOAC position) | the accountable seat of this AIOC: approves and scopes each connection (`connect-external-port`), revokes; owns the fixed tests of its parts; rules on what the Chief of Staff raises; acts as the product's SL administrator for sharing within the owner's policy. Answers for the AIOC, never for the owner's content or decisions | the Cell carrying `[ORG]HOAC-TM` | a HOAC position (`[ORG]HOAC-ACS`). Who holds it, and how, is the organisation's own mechanism, outside the system; this AIOC never sees it (`49GAION/DR-0013`). While the position is empty (no credential in force for it), the Chief of Staff only advises, matters go to the Cell carrying `[ORG]HOAC-TM`, and every act that needs this position's signature waits (Protocol §4.10, item 21) | the organisation's own mechanism, outside the system |
 | Chief of Staff | the intake steward and the needs desk: keep every item moving, honest and traced; the only Cell that asks the owner's people anything for a connected part; this AIOC's voice to the Lead | Source Lifecycle Lead | an agent (`[ORG]CELL-COSSL`) | none; intake and needs requests are held, never closed |
 | Conversation Recorder | turn talk into preview items, run explainer templates, label each statement | Chief of Staff | an agent (`[ORG]CELL-SLCR`) | none; the conversation is held |
 | Source Classifier | propose each item's category, class, confidentiality level, sensitivity tags and document type | Chief of Staff | an agent (`[ORG]CELL-SLSC`) | none; the item stays unclassified, at the default level |
@@ -290,7 +290,7 @@ The blueprint writes `[ORG]` for the organisation's prefix, as central texts do 
 | Independent Auditor | audit a candidate before any critical action, on a configuration distinct from the producer's | Source Lifecycle Lead | an agent (`[ORG]CELL-SLIA`) | none; the critical action stops |
 
 - **Every human position is a HOAC position.** This AIOC starts with one, the Source Lifecycle Lead, and the organisation may add more in this AIOC's own design (§17, *Adding a HOAC position*). The human application roles of the product (Annex A: the requester, the reviewers, the approvers, the final authority, the publication administrator and the others) are HOAC positions too: each is either a HOAC position of this AIOC, or a HOAC position elsewhere in the organisation, for example the `[ORG]HOAC-GOV` position as the final authority. No AI Cell ever holds one.
-- **No natural person** (Standard §1.1, item 9; `49GAION/DR-0013`). This blueprint deals with positions only. Who occupies them, and how, is top management's own mechanism; no part of this AIOC holds, reads or infers it.
+- **No natural person** (Standard §1.1, item 9; `49GAION/DR-0013`). This blueprint deals with positions only. Who holds them, and how, is the organisation's own mechanism, outside the system; no part of this AIOC holds, reads or infers it.
 - **The Independent Auditor reports to the Lead, not to the Chief of Staff,** so that the part that runs the work does not direct the part that checks it (PRD FR-11; **New** as a placement).
 - No AI Cell signs, approves or decides anything that belongs to a person (Protocol §10, item 3; PRD FR-10 to FR-12). Each AI Cell's bot has its own identity card (§17).
 - Each position's role pack is carried in the role cards of the capabilities it performs (§4, §5).
@@ -316,8 +316,8 @@ Default, **connecting** kind: it connects the owner's people with the parts that
 - **The intake steward** (PRD FR-27, FR-36). It is the person-facing half of requester stewardship: it reads back what was said, keeps each statement's label, never records less than what was asked, records contradictions without ruling on them, and asks for what is missing in plain words.
 - **The needs desk** (PRD FR-35 to FR-40; §5.9). It is the only Cell that asks the owner's people anything on behalf of a connected part. It accepts or returns each needs request, chooses who answers a delegable row, asks only the named position for a non-delegable row, and answers by reference. It never answers for a person, never records content the person has not approved, and never decides.
 - **The orchestrator of the stages.** It moves each item through intake, recording, classification and the document stages S0 to S12 (§5.0), dispatches the Cells, runs the code steps (the security scanner, the canonical build, the publication gates, the serve log, the notices) and writes the event record. Code is a tool, never a seat.
-- **Its HOAC seat is a position** (Position Principle). It names the Lead by position code only. When the occupant changes, open work, commitments and the delegation ladder in force pass in full to the new occupant.
-- **Holder Chief of Staff.** It also serves the Lead as the holder's Chief of Staff (`docs/STANDARD-CAPABILITIES.md` §4.2, DR-0010; `49GAION/DR-0011`, item 6), within the delegation ladder of §15. It never signs a type of `upstream/human-floor-signature-types.json`, and the Lead's HU ports and stop door never pass through it.
+- **Its HOAC seat is a position** (Position Principle). It names the Lead by position code only. Open work, commitments and the delegation ladder in force stay with the position, whoever holds it.
+- **Position Chief of Staff.** It also serves the Lead as the Position Chief of Staff (`docs/STANDARD-CAPABILITIES.md` §4.2, DR-0010; `49GAION/DR-0011`, item 6), within the delegation ladder of §15. It never signs a type of `upstream/human-floor-signature-types.json`, and the Lead's HU ports and stop door never pass through it.
 #### Process (SOP)
 Default, plus:
 1. **Intake.** Every arrival goes first to the Input socket (§4.3). Admitted items are recorded as events with ID, version, status and owner position → *admitted item* (evidence: the event record).
@@ -340,7 +340,7 @@ Default, plus:
 | Write location | the event record of this AIOC and its Work Items |
 | Reports to | the Source Lifecycle Lead |
 | Escalation | to the Lead in one line, with evidence linked; while the Lead's position is vacant, to the Cell carrying `[ORG]HOAC-TM`; a stop goes to the stop door, never through this Cell |
-| Tools and access | the code steps of the code project; the connectors, through the tool gateway, within their signed scopes; the register of positions, read only, to reach a position's occupants; no credential in any instruction |
+| Tools and access | the code steps of the code project; the connectors, through the tool gateway, within their signed scopes; the register of positions, read only, to reach a position through its HU port; no credential in any instruction |
 | Deputy and cover | none; on failure, intake and needs requests are held and the Lead is told |
 | Fixed test and score | TEST-SL-COSSL v1 (§9), plus the default Chief of Staff test (a) to (l) |
 | Card version and status | v0.1.0 · draft |
@@ -807,7 +807,7 @@ TEST-SL v1, cases 27, 61, 72 (owner: `[ORG]CELL-SLL`) · result `NOT_RUN`
 | The owner's sources, their versions, approvals, classifications and sharing | the product's own store, in the owner's instance; never in a repository of 49GAION or of this AIOC, and never in the 49GAION Library (Protocol §13, item 3) | one home per owner |
 | The event record, the serve log and the needs log | the product's own store, as immutable events (Protocol §14, item 1); registers and boards are projections | one home |
 | Connections, scope changes and revocations | the unit register, append-only (Protocol §13, item 5) | one home |
-| The link between positions and the natural persons who occupy them | not in SL: top management's own mechanism (`49GAION/DR-0013`); SL holds position codes only | never in SL |
+| The link between positions and the natural persons who hold them | not in SL: the organisation's own mechanism, outside the system (`49GAION/DR-0049`); SL holds position codes only | never in SL |
 | Sources whose content names people (a contract, a minute) | the source's classification and the restricted partition (Protocol §14, item 6); content, never an actor | one home |
 | Work Items | the shared queue | Protocol §2 |
 | Secrets | the organisation's vault only; never in SL (PRD FR-33) | never written |
@@ -902,7 +902,7 @@ The cases are written in `tests/TEST-SL.md`. Cases 1 to 16 are the Library's TES
 | Check | Placement | Budget per item | Degradation order | Blocks only for |
 |---|---|---|---|---|
 | Daily projection check: registers equal a rebuild from the events; no number stream has gaps or duplicates (Protocol §14, item 5) | after completion | one run per day | none; a failure opens a defect | nothing; it flags |
-| Outbound name check: no occupant's name or contact in any needs answer, reference or notice | router | each outbound message | none | the message |
+| Outbound name check: no person's name or contact in any needs answer, reference or notice | router | each outbound message | none | the message |
 | Secret scan of logs and exports | after completion | each log batch and export | none | the export |
 | Sockets contract fixtures | in CI, on every change to the contract | each change | none | the merge |
 | Serve-log reconciliation: every read is inside a grant that was active at that time | after completion | daily | none; a failure opens a defect | nothing; it flags |
@@ -925,8 +925,8 @@ The cases are written in `tests/TEST-SL.md`. Cases 1 to 16 are the Library's TES
 
 1. **The product's application is the contributor's face** (§4.4). The Standard makes the Panel the only surface humans use. SL must run alone, with no `[ORG]AION` (PRD FR-34), so contributors and the HOAC positions work in the product's application, which keeps the Panel's rules. Proposed to the mother (§12, item 1).
 2. **A Chief of Staff of the connecting kind that also orchestrates.** The Chief of Staff connects people with parts and also moves items through the stages. One Cell does both because every person-facing question must pass one door; if load grows, an Office is proposed (§4.1).
-3. **The holder Chief of Staff is this AIOC's Chief of Staff.** The Standard attaches a holder Chief of Staff to the holder's Cell. Here the AIOC's own Chief of Staff serves the Lead in that role, with no attached Cell, so that the Lead has one voice to deal with.
-4. **"The seat that `[ORG]AIOC-SL` is accountable to"** (Protocol §13, item 5) is read as the holder of `[ORG]HOAC-ACS` over this AIOC, the Source Lifecycle Lead, and not as the Cell carrying `[ORG]HOAC-TM` named in the card's `accountable_to`. Proposed to the mother (§12, item 2).
+3. **The Position Chief of Staff is this AIOC's Chief of Staff.** The Standard attaches a Position Chief of Staff to the position's Cell. Here the AIOC's own Chief of Staff serves the Lead in that role, with no attached Cell, so that the Lead has one voice to deal with.
+4. **"The seat that `[ORG]AIOC-SL` is accountable to"** (Protocol §13, item 5) is read as the position carrying `[ORG]HOAC-ACS` over this AIOC, the Source Lifecycle Lead, and not as the Cell carrying `[ORG]HOAC-TM` named in the card's `accountable_to`. Proposed to the mother (§12, item 2).
 5. **Human application roles map to HOAC positions in or out of this AIOC** (Annex A). The template's positions table lists this AIOC's own positions; here a human role of the product may also be filled by a HOAC position elsewhere in the organisation, such as the `[ORG]HOAC-GOV` position.
 
 ## 12. Lessons and proposals to the mother
@@ -944,7 +944,7 @@ Money, people and legal matters are marked. The PRD's open decisions are named b
 
 | ID | Decision | Who decides | Effect while open |
 |---|---|---|---|
-| H-01 | **Top management's own mechanism.** Arrange the Source Lifecycle Lead position (`[ORG]CELL-SLL`) and any HOAC position added to this AIOC (`49GAION/DR-0011` to `DR-0013`). Nothing of who occupies them enters this blueprint | the Cell carrying `[ORG]HOAC-TM` (`49GAION/DR-0011`, item 2) | the position is vacant: the Chief of Staff only advises; every grant, revocation by this position and test ownership act is blocked; matters go to the TM Cell (Protocol §4.10, item 21) |
+| H-01 | **The organisation's own mechanism.** Who holds the Source Lifecycle Lead position (`[ORG]CELL-SLL`) and any HOAC position added to this AIOC, and how, is decided outside the system (`49GAION/DR-0048`, `DR-0049`). Nothing of it enters this blueprint | the organisation's own mechanism, outside the system | the position is empty: the Chief of Staff only advises; every grant, revocation by this position and test ownership act is blocked; matters go to the TM Cell (Protocol §4.10, item 21) |
 | H-02 | Adopt, change or refuse PRD FR-35 to FR-46 and the first sockets contract (PRD D-20) | the `[ORG]HOAC-GOV` position, with the SL technical lead and the technical authority position | `[ORG]AIOC-TOM` cannot start a run; §5.8 and §5.9 stay **Proposed** |
 | H-03 | **Legal.** The contributor agreement's terms, which need legal review; trial length and **money**: pricing; retention and legal basis for personal and household data (PRD D-17) | the `[ORG]HOAC-GOV` position | no input can be admitted under an agreement that does not exist |
 | H-04 | The default confidentiality level (PRD D-15; proposed Confidential) | the `[ORG]HOAC-GOV` position, with the SL technical lead | unclassified items have no default |
@@ -1112,8 +1112,8 @@ parts:
 **Adding a HOAC position.**
 
 - **At least one; more may be added.** This AIOC has at least one HOAC position, the Source Lifecycle Lead. The organisation may add more in this AIOC's own design: for example an ACS position for each universe, for a stage of Document Production, or for a human application role it wants inside SL (Annex A), including ACS positions that act for the `[ORG]HOAC-GOV` position.
-- **How.** Each is a tested change to this blueprint, made through OCO and approved by the human hub. It adds one human Cell to the parts block (or a Pod with a `decision_rule`, where a group of positions decides together), with its HOAC label; its `accountable_to`, the HOAC position above it (the Lead, the `[ORG]HOAC-GOV` position for an ACS position acting for it, or the Cell carrying `[ORG]HOAC-TM`); its `authority_scope`, the listed types it signs, delegated under `delegate-authority` where it acts for a position above it; and its fixed test. `tools/make_cards.py` regenerates the cards and refuses a human Cell with no HOAC label.
-- **Position, not person.** Each names a position only (Standard §1.1, item 9). Who occupies it, and how, is top management's own mechanism (`49GAION/DR-0011` to `DR-0013`). This blueprint never names an occupant and never reads an occupancy entry.
+- **How.** Each is a tested change to this blueprint, made through OCO and approved by the human hub. It adds one human Cell to the parts block, with its HOAC label (a board behind a position is the organisation's own; `decision_rule` is withdrawn, `49GAION/DR-0049`); its `accountable_to`, the HOAC position above it (the Lead, the `[ORG]HOAC-GOV` position for an ACS position acting for it, or the Cell carrying `[ORG]HOAC-TM`); its `authority_scope`, the listed types it signs, delegated under `delegate-authority` where it acts for a position above it; and its fixed test. `tools/make_cards.py` regenerates the cards and refuses a human Cell with no HOAC label.
+- **Position, not person.** Each names a position only (Standard §1.1, item 9). Who holds it, and how, is the organisation's own mechanism, outside the system (`49GAION/DR-0048`, `DR-0049`). This blueprint never names a person and never reads who holds a position.
 
 **Code checks** (Naming Standard R15, R16 and §5), recorded on 15 October 2026; the Chief of Staff's COS code on 19 October 2026. Each code is checked again against the organisation's unit register before first use (R6, R15.3).
 
@@ -1202,10 +1202,10 @@ A needs request is returned, with a `needs status` of `returned` and one reason,
 | Row | Who answers | Rule |
 |---|---|---|
 | delegable (`non_delegable` false) | a position the Chief of Staff chooses | the part's `suggested_seat` is advice only; the chosen position's answering sign-in has a current contributor agreement |
-| non-delegable (`non_delegable` true) | only the position named in `answering_cell`, through its HU port | the tool gateway checks that the answering sign-in belongs to a current occupant of that position; an answer from any other position is refused; a vacant position holds the row and goes to the Lead |
+| non-delegable (`non_delegable` true) | only the position named in `answering_cell`, through its HU port | the tool gateway checks the credential the organisation's mechanism issued for that position, with a fresh live sign-in; an answer from any other position is refused; an empty position holds the row and goes to the Lead |
 | listed type (`listed_type` or `org_listed_type`) | the position that signs that type, at the tool gateway | never captured in SL's screens or by the Chief of Staff; recorded only with a valid `signature_ref`; with no gateway, returned `no gateway` (PRD D-21, proposed) |
 
-SL reads no occupancy entry, and no occupant's name ever reaches the part. The answer names positions only.
+SL reads nothing about who holds a position, and no person's name ever reaches the part. The answer names positions only.
 
 ### D.3 What comes back, by type
 | Type | What the person gives | What SL records | Outcomes allowed |

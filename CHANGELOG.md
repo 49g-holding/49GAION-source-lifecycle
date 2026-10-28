@@ -7,5 +7,6 @@
 | 2026-10-19 | `v0.1.4` | `decisions/DR-0002`: the Chief of Staff takes its COS code, `[ORG]CELL-SLCS` → `[ORG]CELL-COSSL` (Naming Standard R16, `49GAION/DR-0028`). The old code is retired and kept in the card's lineage; the part test is renamed; every card takes the new version. Nothing else changes. |
 | 2026-10-19 | `v0.1.4` | `contracts/README.md` only; the blueprint does not change. The sockets contract is re-pinned at the Target Operating Model mother v0.6.1 (`302e98b`): the needs request takes `$id` `v0.6.1` and its new hash, since its `raised_by` names `[ORG]CELL-COSTOM`; the other five contracts are byte-identical. |
 | 2026-10-25 | unreleased | `decisions/DR-0003`: the readings of `49GAION/DR-0041`, the complete definition of 49GAION. Labelled readings in the README and at the top of the blueprint; nothing is removed; the version, the cards and the Library pin do not change. |
+| 2026-10-28 | unreleased | `decisions/DR-0004`: positions only (`49GAION/DR-0048`, `DR-0049`). Every human place is a position; who holds it, and how, is the organisation's own mechanism, outside the system. The acting filler, `appoint-acting-filler`, deputies of human seats, occupancy and arrangement entries and the holders register leave the texts; the former wording is kept in the record, verbatim. Unreleased; the version label does not change. |
 
 *Powered by 49GAION*

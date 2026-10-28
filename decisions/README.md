@@ -9,5 +9,6 @@ One `DR-####` file per decided subject, numbered in order. A record file never c
 | [`DR-0001`](DR-0001-the-mother-repository-and-its-first-blueprint.md) | 2026-10-16 | The mother repository of Source Lifecycle, and its first mother blueprint | in force on merge |
 | [`DR-0002`](DR-0002-cos-code.md) | 2026-10-19 | Source Lifecycle mother v0.1.4: the Chief of Staff takes its COS code | in force on merge |
 | [`DR-0003`](DR-0003-the-readings-of-dr-0041.md) | 2026-10-25 | Source Lifecycle mother: the readings of 49GAION/DR-0041, the complete definition | in force on merge |
+| [`DR-0004`](DR-0004-positions-only.md) | 2026-10-28 | Source Lifecycle mother: positions only, brought into line with 49GAION/DR-0048 and DR-0049 | in force on merge |
 
 *Powered by 49GAION*
