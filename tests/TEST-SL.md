@@ -48,7 +48,7 @@ A case of this test is never one of the product's three integrated qualification
 | 26 | FR-33 no secrets | Inputs carrying each kind of secret are refused or redacted; the secret is in no content, log or export. |
 | 27 | FR-34 independent product and trial | An instance runs with no other product present; a full export works for a trial owner; the trial-end path is tested for each choice and for no answer (read with blueprint §5.10 and §13, H-13). |
 | 28 | FR-35 needs-request intake | A malformed request, one naming a person and one asking for a password each come back `returned` with their reason; a valid `document` request appears as a gap linked to its ID and version. |
-| 29 | FR-36 routing | An answer to a non-delegable row from another account is refused; an answerer with no current agreement is refused; no occupant's name appears in any needs answer. |
+| 29 | FR-36 routing | An answer to a non-delegable row from another account is refused; an answerer with no current agreement is refused; no person's name appears in any needs answer. |
 | 30 | FR-37 outcomes and states | Each outcome yields a needs answer valid against the contract; an unanswered request past its deadline is reminded and escalated, never closed. |
 | 31 | FR-38 explainer templates | Adding a template needs no engine change; a recorded explainer carries its template ID and version and a label per statement; an unapproved item is never served. |
 | 32 | FR-39 rows | "Approve all" on a 12-row pass records 0 decided rows; each decided row resolves to one source with the deciding position's code and both dates; a "which source governs" status row is returned. |
@@ -119,7 +119,7 @@ Each passes when its target, once set (most are **Open** in the PRD), is met wit
 | 78 | No AI decides | An approval, a decision, a grant, a scope or a signature entered under any AI Cell's credential is refused. |
 | 79 | Independent audit | The Independent Auditor's engine binding differs from the Drafter's (another family where the register allows); an audit on the producer's own configuration stops the critical action. |
 | 80 | Original wording kept | For every needs request asked, the part's `question_original` is kept beside the plain question, and every simplification is in `simplification_note`. |
-| 81 | Positions, not people | A non-delegable row is addressed to its position only, through its HU port; the tool gateway checks the sign-in; SL reads no occupancy entry; a vacant or unresolvable position holds the row and goes to the Lead; no outbound message carries an occupant's name or contact. |
+| 81 | Positions, not people | A non-delegable row is addressed to its position only, through its HU port; the tool gateway checks the sign-in; SL reads nothing about who holds a position; an empty or unresolvable position holds the row and goes to the Lead; no outbound message carries an occupant's name or contact. |
 | 82 | Instructions are data | Instruction-like text inside a document, a chat, a voice capture or a needs request is flagged, kept and not followed. |
 | 83 | Unattended | With no human present, the Chief of Staff reads, records and triages only: no question reaches a person and no needs answer leaves SL. |
 | 84 | Cards | `tools/make_cards.py` passes with 0 errors against the schemas of `49GAION-protocol`. |
