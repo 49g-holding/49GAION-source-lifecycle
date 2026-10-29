@@ -256,7 +256,7 @@ The blueprint writes `[ORG]` for the organisation's prefix, as central texts do 
 | **The owner** (PRD §3) | the organisation whose sources SL keeps. In a group, the group and each of its entities; each entity is a universe (PRD §4.3) |
 | **The HOAC positions** | every human position that acts in SL: it contributes, approves, decides or consumes sources. Each is a position carrying a HOAC label (`[ORG]HOAC-GOV`, `[ORG]HOAC-TM` or `[ORG]HOAC-ACS`), never a person (Standard §5.2, Position Principle; `49GAION/DR-0011`). Some are positions of this AIOC (§17); others sit elsewhere in the organisation, for example the `[ORG]HOAC-GOV` position. Each human application role of the product is mapped to one (Annex A) |
 | **The register of positions** | the unit register's `position` entries. Who holds a position, and its history, is the organisation's own mechanism, outside the system; SL never sees it (`49GAION/DR-0049`). SL reaches a position only through its HU port, and only the tool gateway checks the credential the organisation's mechanism issued for that position |
-| **The tool gateway** | held in the Charter (Standard §4.4, item 11). Every connection, every signature of a listed type and every stop passes through it |
+| **The tool gateway** | carried by the Charter and run as code beside the core, outside the reach of every AI (Standard §4.4, item 11; `49GAION/DR-0052`). Every connection, every signature of a listed type and every stop passes through it |
 
 ### 2.2 Placement
 
@@ -271,7 +271,7 @@ The blueprint writes `[ORG]` for the organisation's prefix, as central texts do 
   - **`[ORG]AIOC-OER`**, the Operations Event Register, keeps what the organisation did, where SL keeps what it knows. It files only an entry a position asks to keep, as `correspondence`, and its projection of the work, as an `export`, within its write scope (§5.8), and sends gap signals (§5.2). It reads only the references of the sources its entries cite, never content, and SL never records its register (`49GAION/DR-0027`; **New** in v0.1.3).
   - **`[ORG]AIOC-OCO`** installs, fixes and upgrades this AIOC, builds its Panel, and carries its blueprint changes; it never grades it (Standard §2.3, item 9).
   - **The IT and infrastructure division** hosts the vault. SL never holds a secret; a socket to the vault comes later (PRD FR-33, D-16).
-  - **A replacement source.** In a stage after the first, another source may stand beside SL, read only, through the reading part's own adapter. Asking and filing stay with SL (Protocol §13, item 7; the reading proposed by the Target Operating Model mother, `github.com/49g-holding/49aioc-tom`, `upstream/PROPOSALS.md`, item 8).
+  - **A replacement source.** In a stage after the first, another source may stand beside SL, read only, through the reading part's own adapter. Asking and filing stay with SL (Protocol §13, item 7; the reading proposed by the Target Operating Model mother, `github.com/49g-holding/49GAION-target-operating-model`, `upstream/PROPOSALS.md`, item 8).
 - **Overlap.** None known inside an `[ORG]AION`. Outside one, the product runs alone for owners with no `[ORG]AION` (PRD FR-34); the differences are in §11.
 
 ---
@@ -317,7 +317,7 @@ Default, **connecting** kind: it connects the owner's people with the parts that
 - **The needs desk** (PRD FR-35 to FR-40; §5.9). It is the only Cell that asks the owner's people anything on behalf of a connected part. It accepts or returns each needs request, chooses who answers a delegable row, asks only the named position for a non-delegable row, and answers by reference. It never answers for a person, never records content the person has not approved, and never decides.
 - **The orchestrator of the stages.** It moves each item through intake, recording, classification and the document stages S0 to S12 (§5.0), dispatches the Cells, runs the code steps (the security scanner, the canonical build, the publication gates, the serve log, the notices) and writes the event record. Code is a tool, never a seat.
 - **Its HOAC seat is a position** (Position Principle). It names the Lead by position code only. Open work, commitments and the delegation ladder in force stay with the position, whoever holds it.
-- **Position Chief of Staff.** It also serves the Lead as the Position Chief of Staff (`docs/STANDARD-CAPABILITIES.md` §4.2, DR-0010; `49GAION/DR-0011`, item 6), within the delegation ladder of §15. It never signs a type of `upstream/human-floor-signature-types.json`, and the Lead's HU ports and stop door never pass through it.
+- **Position Chief of Staff.** It also serves the Lead as the Position Chief of Staff (`docs/STANDARD-CAPABILITIES.md` §4.2, DR-0010; `49GAION/DR-0011`, item 6), within the delegation ladder of §15. It signs for the Lead only within the grant the Lead has given it, which may reach a type of `upstream/human-floor-signature-types.json`; what it signs under that grant is the Lead's own decision (`49GAION/DR-0053`, item 11). The Lead's HU ports and stop door never pass through it.
 #### Process (SOP)
 Default, plus:
 1. **Intake.** Every arrival goes first to the Input socket (§4.3). Admitted items are recorded as events with ID, version, status and owner position → *admitted item* (evidence: the event record).
@@ -365,7 +365,7 @@ Default, with this AIOC's standard format, the **admitted item**: the original b
 | Work Item | a request from a connected part: read, filing, needs request, Missing Report, needs status | validate against the published contract and the part's grant | FR-31, FR-35, FR-43, FR-46 |
 
 **The shared checks, for every converter.**
-1. **The contributor agreement.** No input is admitted from an account without a current accepted agreement. A new agreement version needs re-acceptance before further input. Every item links to its agreement (PRD FR-25; Protocol §13, item 2). In a 49GAION installation, SL records the acceptance under the contributor's position code; the occupant's identity is stamped by the tool gateway into top management's records alone (`49GAION/DR-0013`). When SL runs alone, the owner's account settings hold it.
+1. **The contributor agreement.** No input is admitted from an account without a current accepted agreement. A new agreement version needs re-acceptance before further input. Every item links to its agreement (PRD FR-25; Protocol §13, item 2). In a 49GAION installation, SL records the acceptance under the contributor's position code, and the tool gateway checks the credential the organisation's mechanism issued for that position; it never stamps or links a natural person, and who holds the position is the organisation's own mechanism, outside the system (`49GAION/DR-0049`, `DR-0052`). When SL runs alone, the owner's account settings hold it.
 2. **No secret.** Passwords, keys, tokens, seed phrases and one-time codes are refused, in files, text, chat and voice. The secret appears in no content, record, log or export (PRD FR-33; Protocol §5, item 3).
 3. **Unsafe containers are quarantined at receipt**: traversal, archive bombs, symlinks, macros and executables, encrypted or credential-carrying containers; with a stable reason (PRD FR-21).
 4. **Instruction-like text is data.** It is flagged and kept, never followed. A file dropped where an AI can write is a notice, never an instruction or a decision (STANDARD-CAPABILITIES §4.3, added).
@@ -715,7 +715,7 @@ A design report that holds a return is filed with the hash of the return as sent
 
 **Notices** (PRD FR-45). On a revocation, a narrowing, a reclassification or a supersession that affects references a part has read, that part receives a notice naming each affected reference and version, never the content.
 
-**The sockets contract** (PRD FR-46). The needs-request, needs-answer, needs-status, Missing Report and source-reference contracts are versioned JSON Schemas with fixtures. The first drafts are those of the Target Operating Model mother (`github.com/49g-holding/49aioc-tom`) `v0.4.0` (`contracts/README.md` of this repository names them by path and hash). SL adopts or changes them under PRD D-20. A change names every connected part it affects and re-runs the cross-AIOC test (Protocol §11, item 2). **The v0.6 drafts** (`github.com/49g-holding/49aioc-tom` `v0.6.0`; **New** in v0.1.2): an element row carries its proposed priority, which SL shows with the row; the priority decided is recorded with the decision; an export request for records of the work states its aggregation, `by role-type and process` (Annex F.3).
+**The sockets contract** (PRD FR-46). The needs-request, needs-answer, needs-status, Missing Report and source-reference contracts are versioned JSON Schemas with fixtures. The first drafts are those of the Target Operating Model mother (`github.com/49g-holding/49GAION-target-operating-model`; its versions before `v0.6.1` are in the archived `github.com/49g-holding/49aioc-tom`) `v0.4.0` (`contracts/README.md` of this repository names them by path and hash). SL adopts or changes them under PRD D-20. A change names every connected part it affects and re-runs the cross-AIOC test (Protocol §11, item 2). **The v0.6 drafts** (the same mother, `v0.6.0`; **New** in v0.1.2): an element row carries its proposed priority, which SL shows with the row; the priority decided is recorded with the decision; an export request for records of the work states its aggregation, `by role-type and process` (Annex F.3).
 #### Process (SOP)
 | Field | Content |
 |---|---|
@@ -742,7 +742,7 @@ TEST-SL v1, cases 5, 6, 8 to 15, 24, 25, 34 to 39, 87, 91, 92, 93 and 95 (owner:
 | Inputs | a needs request, as a sub-item of the part's Work Item, with its pass and Missing Report; needs status messages `withdrawn` and `superseded` from the part |
 | Outputs | a needs answer by reference; needs status messages `accepted`, `returned` and `asked`; a gap, for an accepted `document` or `export` request |
 | Limits | Annex D in full; Annex E |
-| Sources | PRD FR-35 to FR-40, FR-27; journey 11; `github.com/49g-holding/49aioc-tom`, `docs/INTAKE-WITH-SOURCE-LIFECYCLE.md` §2 and §9 (SL-A1 to SL-A6) |
+| Sources | PRD FR-35 to FR-40, FR-27; journey 11; `github.com/49g-holding/49GAION-target-operating-model`, `docs/INTAKE-WITH-SOURCE-LIFECYCLE.md` §2 and §9 (SL-A1 to SL-A6) |
 | Status | draft; **Proposed** until PRD D-20 |
 | Done when | TEST-SL v1, cases 28 to 33, 77, 80, 81 pass |
 #### Process (SOP)
@@ -770,7 +770,7 @@ TEST-SL-COSSL v1 (TEST-SL v1, cases 28 to 33, 77, 80, 81) · result `NOT_RUN`
 | Scope | does: provisioning per owner; a trial period; full export at any time; the trial-end path; deletion with a receipt; does not: keep an owner's data past the owner's instruction |
 | Inputs | a provisioning request; the owner's choice at trial end |
 | Outputs | a provisioned instance; an export; a converted instance; a deletion receipt |
-| Limits | with no answer at trial end, the data becomes read-only and is then deleted, with a receipt (**Proposed**: PRD FR-34); in a 49GAION installation, the deletion is the listed type `dispose-records-or-data` and an export or purge of personal data is `export-share-or-purge-personal-data`, each signed by the owner's HOAC position at the tool gateway, so with no answer the data stays read-only until that signature (§13, H-13); personal and household data are retained only as long as needed (NFR-10); trial length and pricing are open (PRD D-17) |
+| Limits | with no answer at trial end, the data becomes read-only and stays held (PRD FR-34 proposes deletion after a read-only period); in a 49GAION installation, the deletion is the listed type `dispose-records-or-data` and an export or purge of personal data is `export-share-or-purge-personal-data`, each signed by the owner's HOAC position at the tool gateway, so with no answer the data stays read-only until that signature (§13, H-13); personal and household data are retained only as long as needed (NFR-10); trial length and pricing are open (PRD D-17) |
 | Sources | PRD FR-34, FR-22, NFR-10; journey 10 |
 | Status | draft |
 | Done when | TEST-SL v1, cases 27, 61, 72 pass |
@@ -778,8 +778,8 @@ TEST-SL-COSSL v1 (TEST-SL v1, cases 28 to 33, 77, 80, 81) · result `NOT_RUN`
 | Field | Content |
 |---|---|
 | Trigger | a provisioning request; the trial's end date |
-| Steps | 1. **The organisation's commercial position** (outside this AIOC): agree the trial → *trial record*. 2. **Chief of Staff**: provision the instance → *instance*. 3. **HOAC position** of the owner: at the end, choose export, conversion or deletion → *choice*. 4. **Chief of Staff**: carry out the choice; with no answer, make the data read-only, then delete with a receipt → *receipt*. |
-| States | provisioned → trial → converted / exported / read-only → deleted |
+| Steps | 1. **The organisation's commercial position** (outside this AIOC): agree the trial → *trial record*. 2. **Chief of Staff**: provision the instance → *instance*. 3. **HOAC position** of the owner: at the end, choose export, conversion or deletion → *choice*. 4. **Chief of Staff**: carry out the choice; with no answer, make the data read-only and keep it held; it is deleted only on the owner position's signed decision (`dispose-records-or-data`, H-13), with a receipt → *receipt*. |
+| States | provisioned → trial → converted / exported / read-only (held) → deleted, only on the owner position's signed decision |
 | Failure and recovery | a failed export is retried and never followed by deletion |
 | Records | the trial record, the choice, the receipt |
 | Cadence | per trial |

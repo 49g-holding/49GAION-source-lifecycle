@@ -4,7 +4,7 @@
 
 The sockets contract is how every connected part talks to Source Lifecycle (PRD FR-31, FR-46; blueprint §5.8). Its first drafts were written by `[ORG]AIOC-TOM` and are kept where they were written. They are named here by path and hash, not copied, so that there is one home for each. Source Lifecycle adopts them, changes them or replaces them under PRD D-20 (blueprint §13, H-02). Until then they are **Proposed**.
 
-Source: `github.com/49g-holding/49aioc-tom`, v0.6.1, folder `contracts/`, at the merged commit `302e98b4937609484adb5164c20b5ef22211c411`; each file is named by its hash, read back at that commit on 19 October 2026. From v0.6.0 (`a8445cb`) only the needs request changed: its `raised_by` names the Target Operating Model's Chief of Staff by its COS code, `[ORG]CELL-COSTOM` (Naming Standard R16), and its `$id` moved to `v0.6.1`; the other five files are byte-identical. The v0.4.0 drafts (commit `2ec2373`) are superseded: v0.6 adds the proposed and decided priority of an element row, and the aggregation of an export request for records of the work (blueprint §5.8; Annex F.3).
+Source: the Target Operating Model mother, `github.com/49g-holding/49GAION-target-operating-model`, folder `contracts/`, holds the same files with the same hashes; they were first read in the archived `github.com/49g-holding/49aioc-tom`, v0.6.1, folder `contracts/`, at the merged commit `302e98b4937609484adb5164c20b5ef22211c411`; each file is named by its hash, read back at that commit on 19 October 2026. From v0.6.0 (`a8445cb`) only the needs request changed: its `raised_by` names the Target Operating Model's Chief of Staff by its COS code, `[ORG]CELL-COSTOM` (Naming Standard R16), and its `$id` moved to `v0.6.1`; the other five files are byte-identical. The v0.4.0 drafts (commit `2ec2373`) are superseded: v0.6 adds the proposed and decided priority of an element row, and the aggregation of an export request for records of the work (blueprint §5.8; Annex F.3).
 
 | Contract | File | `$id` | SHA-256 |
 |---|---|---|---|
@@ -21,6 +21,6 @@ These are noted for the decision, not decided here.
 
 1. **Who may raise a request.** In the draft, `needs-request.raised_by` lists only the Pods and the Chief of Staff of `[ORG]AIOC-TOM`. A contract that any connected part can use would take the raising part's own codes, checked against its grant.
 2. **Whose names.** The `$id`s sit under `library:tom`. When Source Lifecycle adopts them as its own published contract, they move under its own name, and each connected part pins the version it supports.
-3. **Fixtures in CI.** The fixtures are in `github.com/49g-holding/49aioc-tom`, `contracts/examples/`. Once adopted, they run in the code project's CI on every change to the contract (PRD FR-46).
+3. **Fixtures in CI.** The fixtures are in `github.com/49g-holding/49GAION-target-operating-model`, `contracts/examples/`. Once adopted, they run in the code project's CI on every change to the contract (PRD FR-46).
 
 *Powered by 49GAION*

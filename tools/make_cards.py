@@ -1,6 +1,7 @@
 """Generate and check the cards of [ORG]AIOC-SL from its blueprint.
 
-Adapted from the card generator of the Target Operating Model mother, github.com/49g-holding/49aioc-tom v0.4.0 (tools/make_cards.py).
+Adapted from the card generator of the Target Operating Model mother (now github.com/49g-holding/49GAION-target-operating-model;
+v0.4.0 is in the archived github.com/49g-holding/49aioc-tom), tools/make_cards.py.
 
 The blueprint governs. This script reads the card data block of blueprint §17 (the YAML
 block that starts with `parts:`) and the AIOC card of blueprint §1. It writes the complete

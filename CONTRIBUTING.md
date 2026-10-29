@@ -2,7 +2,7 @@
 
 **49GAION Source Lifecycle, mother blueprint `v0.1.5` · 29 October 2026.**
 
-1. **One change, one pull request**, reviewed by someone other than its writer, and merged by the governing seat of 49GAION.
+1. **One change, one pull request**, reviewed by a party other than its writer, and merged by the governing seat of 49GAION.
 2. **No organisation's data.** No organisation's name, host, code, document or value is ever written here (Naming Standard R9). An instance keeps its own values in its own repositories.
 3. **Positions, never people.** No person's name, initials or personal ID in any file.
 4. **The PRD governs the product; the blueprint governs the AIOC.** A rule that changes what the product must do goes to the product's PRD first; the blueprint then cites it.
