@@ -5,11 +5,11 @@ full_name: Source Lifecycle Independent Auditor
 parent: '[ORG]AIOC-SL'
 accountable_to: '[ORG]CELL-SLL'
 type: AI Agent
-card_version: v0.1.5
-version: 0.1.5
+card_version: v0.1.6
+version: 0.1.6
 lineage:
   id: '[ORG]CELL-SLIA'
-  version: 0.1.5
+  version: 0.1.6
   relation: original
 lifecycle_state: designed
 fixed_test:
