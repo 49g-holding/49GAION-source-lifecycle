@@ -5,11 +5,11 @@ full_name: Source Lifecycle Consistency Auditor
 parent: '[ORG]POD-SLIR'
 accountable_to: '[ORG]CELL-SLL'
 type: AI Agent
-card_version: v0.1.5
-version: 0.1.5
+card_version: v0.1.6
+version: 0.1.6
 lineage:
   id: '[ORG]CELL-SLCA'
-  version: 0.1.5
+  version: 0.1.6
   relation: original
 lifecycle_state: designed
 fixed_test:

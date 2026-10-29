@@ -1,6 +1,6 @@
 # Contributing
 
-**49GAION Source Lifecycle, mother blueprint `v0.1.5` · 29 October 2026.**
+**49GAION Source Lifecycle, mother blueprint `v0.1.6` · 29 October 2026.**
 
 1. **One change, one pull request**, reviewed by a party other than its writer, and merged by the governing seat of 49GAION.
 2. **No organisation's data.** No organisation's name, host, code, document or value is ever written here (Naming Standard R9). An instance keeps its own values in its own repositories.

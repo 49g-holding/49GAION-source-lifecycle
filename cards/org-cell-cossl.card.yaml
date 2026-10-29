@@ -5,8 +5,8 @@ full_name: Source Lifecycle Chief of Staff
 parent: '[ORG]AIOC-SL'
 accountable_to: '[ORG]CELL-SLL'
 type: AI Chief of Staff
-card_version: v0.1.5
-version: 0.1.5
+card_version: v0.1.6
+version: 0.1.6
 lineage:
   id: '[ORG]CELL-SLCS'
   version: 0.1.3
